@@ -159,7 +159,7 @@
               aria-expanded="false"
             >
               <span class="sr-only">Toggle profile options dropdown</span>
-              <img src="assets/img/avatar-1.jpg" class="thumbnail thumbnail-sm rounded-circle" alt="User Avatar" />
+              <img src="../images/avatar-1.jpg" class="thumbnail thumbnail-sm rounded-circle" alt="User Avatar" />
             </button>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="profileDropdown">
               <a class="dropdown-item" href="#0">Profile</a>
@@ -172,7 +172,7 @@
         </li>
       </ul>
     </div> <!-- end of header-navbar -->
-    <div class="header-billboard" style="background-image: url(assets/img/header-billboard-bg.jpg);">
+    <div class="header-billboard" style="background-image: url(../imagesheader-billboard-bg.jpg);">
       <div class="header-billboard-inner container-main">
         <ul class="nav nav-tabs nav-tabs-light nav-tabs-lg" data-scrollable="true" data-suppress-scroll-y="true">
           <li class="nav-item">
@@ -185,10 +185,10 @@
             <a href="forms.html" class="nav-link">Forms</a>
           </li>
           <li class="nav-item">
-            <a href="tables.html" class="nav-link">Tables</a>
+            <a href="tables.html" class="nav-link active">Tables</a>
           </li>
           <li class="nav-item">
-            <a href="typography.html" class="nav-link active">Typography</a>
+            <a href="typography.html" class="nav-link">Typography</a>
           </li>
         </ul>
       </div> <!-- end of header-billboard-inner -->
@@ -293,62 +293,158 @@
       <div class="row">
         <div class="col">
           <div class="card">
-            <div class="card-body">
-              <h2 class="mb-3 text-md">Typography</h2>
-              <p class="mb-0">
-                For the body text we used <a href="https://fonts.google.com/specimen/Roboto" target="_blank">Roboto</a>,
-                the regular and semibold weights and for the icons we chose
-                <a href="http://zavoloklom.github.io/material-design-iconic-font/index.html">Material Design Iconic Font</a>.
-              </p>
+            <div class="card-body pb-0">
+              <h2 class="mb-4 text-md">Simple table</h2>
             </div> <!-- end of card-body -->
-          </div> <!-- end of card -->
-        </div> <!-- end of col -->
-      </div> <!-- end of row -->
-
-      <div class="row">
-        <div class="col-12 col-lg-6">
-          <div class="card">
-            <div class="card-body">
-              <h2 class="mb-3 text-md">Sizes</h2>
-              <p class="mb-3 text-xs">
-                Text extra small lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultricies, arcu vitae
-                condimentum suscipit, nibh lacus consequat.
-              </p>
-              <p class="mb-3 text-sm">
-                Text small fusce id elementum tellus. Cras condimentum sem augue, nec vulputate tortor pellentesque in nibh
-                lacus consequat eros.
-              </p>
-              <p class="mb-3">
-                Text base lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultricies, arcu vitae condimentum
-                suscipit, nibh lacus consequat eros, in lobortis ipsum arcu vitae mi. Curabitur vitae.
-              </p>
-              <p class="mb-3 text-md">
-                Text medium arcu vitae condimentum suscipit, nibh lacus consequat eros, in lobortis ipsum arcu vitae mi.
-                Curabitur vitae fringilla ante condimentum sem augue arcu vitae condimentum.
-              </p>
-              <p class="mb-3 text-lg">
-                Text large lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultricies, arcu vitae condimentum
-                suscipit, nibh lacus ultricies, arcu vitae condimentum consequ.
-              </p>
-              <p class="mb-0 text-xl">
-                Text extra large lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultricies, arcu vitae
-                condimentum suscipit, nibh lacus.
-              </p>
-            </div> <!-- end of card-body -->
-          </div> <!-- end of card -->
-        </div> <!-- end of col -->
-
-        <div class="col-12 col-lg-6">
-          <div class="card h-100">
-            <div class="card-body">
-              <h2 class="mb-3 text-md">Colors</h2>
-              <p class="text-primary">Text primary imperdiet vitae commodo eu, pellentesque ut.</p>
-              <p class="text-success">Text success nam blandit consequat metus, ac eleifend posuer.</p>
-              <p class="text-warning">Text warning ultrices turpis non nisi sollicitudin blandit.</p>
-              <p class="text-danger">Text danger urabitur condimentum nisi nec felis aliquet ullam.</p>
-              <p class="text-info">Text info am blandit consequat metus, ac eleifend lacus pell.</p>
-              <p class="text-secondary">Text secondary donec finibus tortor nibh curabitur.</p>
-            </div> <!-- end of card-body -->
+            <div class="table-responsive">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Campaign Title</th>
+                    <th>Budget</th>
+                    <th>Clicks</th>
+                    <th>Impressions</th>
+                    <th>CTR</th>
+                    <th>Average CPC</th>
+                    <th>Cost</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Eat Mor Chikin</td>
+                    <td>$20.50/day</td>
+                    <td>227</td>
+                    <td>12,8441</td>
+                    <td>0.28%</td>
+                    <td>$1.87</td>
+                    <td>$210.50</td>
+                    <td>
+                      <span class="badge badge-success">Active</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Spring 2018 Global</td>
+                    <td>$18.18/day</td>
+                    <td>318</td>
+                    <td>17,653</td>
+                    <td>0.30%</td>
+                    <td>$2.21</td>
+                    <td>$578.92</td>
+                    <td>
+                      <span class="badge badge-success">Active</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Just Do It</td>
+                    <td>$85.20/day</td>
+                    <td>1,284</td>
+                    <td>91,678</td>
+                    <td>0.68%</td>
+                    <td>$3.55</td>
+                    <td>$2,481.35</td>
+                    <td>
+                      <span class="badge badge-secondary">Inactive</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>A Diamond is Forever</td>
+                    <td>$125.00/day</td>
+                    <td>2,993</td>
+                    <td>100,842</td>
+                    <td>1.22%</td>
+                    <td>$4.41</td>
+                    <td>$3,977.12</td>
+                    <td>
+                      <span class="badge badge-secondary">Inactive</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Thank You, Mom</td>
+                    <td>$36.11/day</td>
+                    <td>11,773</td>
+                    <td>247,830</td>
+                    <td>2.66%</td>
+                    <td>$5.56</td>
+                    <td>$5,588.05</td>
+                    <td>
+                      <span class="badge badge-primary">Limited</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Queso Bliss Showdown</td>
+                    <td>$379.20/day</td>
+                    <td>8,130</td>
+                    <td>347,266</td>
+                    <td>3.48%</td>
+                    <td>$2.94</td>
+                    <td>$9,729.00</td>
+                    <td>
+                      <span class="badge badge-secondary">Inactive</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>Get Electric</td>
+                    <td>$58.00/day</td>
+                    <td>105</td>
+                    <td>876</td>
+                    <td>0.17%</td>
+                    <td>$1.32</td>
+                    <td>$195.48</td>
+                    <td>
+                      <span class="badge badge-primary">Limited</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>We Are Here</td>
+                    <td>$254/day</td>
+                    <td>7206</td>
+                    <td>14,584</td>
+                    <td>1.19%</td>
+                    <td>$2.90</td>
+                    <td>$8,956.00</td>
+                    <td>
+                      <span class="badge badge-primary">Limited</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>Simple Start</td>
+                    <td>$6.64/day</td>
+                    <td>841</td>
+                    <td>21,031</td>
+                    <td>0.46%</td>
+                    <td>$0.89</td>
+                    <td>$48.66</td>
+                    <td>
+                      <span class="badge badge-danger">Blocked</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>Q2 Remarketing</td>
+                    <td>$400.00/day</td>
+                    <td>6,979</td>
+                    <td>278,506</td>
+                    <td>3,75%</td>
+                    <td>$4.89</td>
+                    <td>$14,502.01</td>
+                    <td>
+                      <span class="badge badge-success">Active</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div> <!-- end of table-responsive -->
           </div> <!-- end of card -->
         </div> <!-- end of col -->
       </div> <!-- end of row -->
@@ -356,76 +452,148 @@
       <div class="row">
         <div class="col">
           <div class="card">
-            <div class="card-body">
-              <h2 class="text-md">Elements</h2>
-              <p class="mb-4 text-secondary">Focusing on the html tags like ul, ol, small, strong, ins, etc</p>
-
-              <div class="row mb-6 w-75">
-                <div class="col-12 col-lg-4 mb-2 mb-lg-0">
-                  <em>Nunc et consectetur leo, non elementum sapien. Integer bibend velit sit amet nulla.</em>
-                </div> <!-- end of col -->
-                <div class="col-12 col-lg-4 mb-2 mb-lg-0">
-                  <u>Nunc et consectetur leo, non elementum sapien. Integer bibendum.</u>
-                </div> <!-- end of col -->
-                <div class="col-12 col-lg-4">
-                  <s>Nunc et consectetur leo, non elementum sapien. Integer bibendum.</s>
-                </div> <!-- end of col -->
-              </div> <!-- end of row -->
-
-              <div class="d-lg-flex mb-7">
-                <ol class="mb-6 mb-lg-0 mr-lg-8 pl-3">
-                  <li class="mb-1">Suspendisse scelerisque</li>
-                  <li class="mb-1">Finibus sollicitudin ex</li>
-                  <li>
-                    Accumsan dui vitae nulla
-                    <ol class="mt-1">
-                      <li class="mb-1">Velit sit amet nulla fringilla</li>
-                      <li class="mb-1">Diam sed dolor blandit</li>
-                    </ol>
-                  </li>
-                  <li>Sed dolor blandit tincidunt</li>
-                </ol>
-
-                <ul class="mb-6 mb-lg-0 mr-lg-8 pl-3">
-                  <li class="mb-1">Suspendisse scelerisque</li>
-                  <li class="mb-1">Finibus sollicitudin ex</li>
-                  <li class="mb-1">
-                    Accumsan dui vitae nulla
-                    <ul class="mt-1">
-                      <li class="mb-1">Velit sit amet nulla fringilla</li>
-                      <li class="mb-1">Diam sed dolor blandit</li>
-                    </ul>
-                  </li>
-                  <li>Sed dolor blandit tincidunt</li>
-                </ul>
-
-                <ul class="list-unstyled mb-6 mb-lg-0">
-                  <li class="mb-1">Suspendisse scelerisque</li>
-                  <li class="mb-1">Finibus sollicitudin ex</li>
-                  <li class="mb-1">
-                    Accumsan dui vitae nulla
-                    <ul class="list-unstyled mt-1 pl-4">
-                      <li class="mb-1">Velit sit amet nulla fringilla</li>
-                      <li class="mb-1">Diam sed dolor blandit</li>
-                    </ul>
-                  </li>
-                  <li>Sed dolor blandit tincidunt</li>
-                </ul>
+            <div class="card-body pb-0">
+              <div class="d-flex align-items-center align-items-md-start justify-content-between mb-4">
+                <h2 class="text-md mb-0">Striped table</h2>
+                <button type="button" class="btn btn-text ml-auto">
+                  <span class="sr-only">Filter table</span>
+                  <i class="zmdi zmdi-filter-list icon icon-lg text-secondary" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="btn btn-text pr-0">
+                  <span class="sr-only">More options</span>
+                  <i class="zmdi zmdi-more-vert icon icon-lg text-secondary" aria-hidden="true"></i>
+                </button>
               </div> <!-- end of d-flex -->
-
-              <ul class="list-inline">
-                <li class="list-inline-item mr-3">Item 1</li>
-                <li class="list-inline-item mr-3">Item 2</li>
-                <li class="list-inline-item mr-3">Item 3</li>
-                <li class="list-inline-item mr-3">Item 4</li>
-                <li class="list-inline-item mr-3">Item 5</li>
-                <li class="list-inline-item mr-3">Item 6</li>
-                <li class="list-inline-item mr-3">Item 7</li>
-                <li class="list-inline-item mr-3">Item 8</li>
-                <li class="list-inline-item mr-3">Item 9</li>
-                <li class="list-inline-item">Item 10</li>
-              </ul>
             </div> <!-- end of card-body -->
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Dessert (100g serving)</th>
+                    <th>Calories</th>
+                    <th>Fat (g)</th>
+                    <th>Carbs (g)</th>
+                    <th>Protein (g)</th>
+                    <th>Sodium (mg)</th>
+                    <th>Calcium (%)</th>
+                    <th>Iron (%)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Frozen yogurt</td>
+                    <td>159</td>
+                    <td>6.0</td>
+                    <td>24</td>
+                    <td>4.0</td>
+                    <td>87</td>
+                    <td>14%</td>
+                    <td>1%</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Ice cream sandwich</td>
+                    <td>237</td>
+                    <td>9.0</td>
+                    <td>37</td>
+                    <td>4.3</td>
+                    <td>129</td>
+                    <td>8%</td>
+                    <td>1%</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Eclair</td>
+                    <td>262</td>
+                    <td>16.0</td>
+                    <td>24</td>
+                    <td>6.0</td>
+                    <td>337</td>
+                    <td>6%</td>
+                    <td>7%</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Cupcake</td>
+                    <td>305</td>
+                    <td>3.7</td>
+                    <td>67</td>
+                    <td>4.3</td>
+                    <td>413</td>
+                    <td>3%</td>
+                    <td>8%</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Gingerbread</td>
+                    <td>356</td>
+                    <td>16.0</td>
+                    <td>49</td>
+                    <td>3.9</td>
+                    <td>327</td>
+                    <td>7%</td>
+                    <td>16%</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Jelly bean</td>
+                    <td>375</td>
+                    <td>0.0</td>
+                    <td>94</td>
+                    <td>0.0</td>
+                    <td>50</td>
+                    <td>0%</td>
+                    <td>0%</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>Lollipop</td>
+                    <td>392</td>
+                    <td>0.2</td>
+                    <td>98</td>
+                    <td>0</td>
+                    <td>38</td>
+                    <td>0%</td>
+                    <td>2%</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>Honeycomb</td>
+                    <td>408</td>
+                    <td>3.2</td>
+                    <td>87</td>
+                    <td>6.5</td>
+                    <td>562</td>
+                    <td>0%</td>
+                    <td>45%</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>Donut</td>
+                    <td>452</td>
+                    <td>25.0</td>
+                    <td>51</td>
+                    <td>4.9</td>
+                    <td>326</td>
+                    <td>2%</td>
+                    <td>22%</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>KitKat</td>
+                    <td>518</td>
+                    <td>26.0</td>
+                    <td>65</td>
+                    <td>7</td>
+                    <td>54</td>
+                    <td>12%</td>
+                    <td>6%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div> <!-- end of table-responsive -->
           </div> <!-- end of card -->
         </div> <!-- end of col -->
       </div> <!-- end of row -->
