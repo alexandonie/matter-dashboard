@@ -1,0 +1,127 @@
+.header,
+.header-navbar-has-shadow {
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
+            0 4px 5px 0 rgba(0, 0, 0, 0.14),
+            0 1px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.header-navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: $spacer * 7;
+  padding: $spacer $spacer * 3;
+  color: $white;
+  background: $primary;
+  z-index: $zindex-fixed;
+  transform: translateZ(0);
+
+  button:not(.btn) {
+    width: $spacer * 4;
+    height: $spacer * 4;
+    padding: $spacer;
+    box-sizing: border-box;
+    font-size: $text-lg;
+    line-height: 1;
+    color: $white;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.2s linear;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.05);
+    }
+
+    &:active:focus {
+      background: rgba(0, 0, 0, 0.1);
+    }
+
+    &:focus {
+      background: rgba(0, 0, 0, 0.05);
+    }
+
+    &.has-notification:before {
+      top: 5px;
+      right: 7px;
+    }
+  }
+
+  &-details {
+    display: flex;
+    align-items: baseline;
+
+    button:not(.btn) {
+      position: relative;
+      left: -$spacer;
+    }
+  }
+
+  &-logo {
+    margin: 0;
+    font-size: $text-lg;
+    color: $white;
+  }
+
+  .form-control {
+    padding: 0.3929rem $spacer * 2;
+    color: $white;
+    border: none;
+    border-radius: $input-border-radius;
+    background: rgba($white, 0.25);
+
+    &::placeholder {
+      color: $white;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 2px rgba($white, 0.4);
+    }
+  }
+}
+
+.header-billboard {
+  height: 177px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: $spacer * 7;
+  color: $white;
+  background-color: $primary;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+@include media-breakpoint-up(md) {
+  .header-billboard {
+    height: 242px;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .header-navbar {
+    padding-right: $spacer * 5;
+    padding-left: $spacer * 5;
+
+    &-details {
+      width: ($sidebar-width - $spacer * 2);
+    }
+  }
+
+  .header-billboard {
+    height: 360px;
+
+    &-inner.container-main {
+      transform: none;
+    }
+  }
+}

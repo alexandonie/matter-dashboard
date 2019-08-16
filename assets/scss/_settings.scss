@@ -1,0 +1,336 @@
+//
+// Options
+//
+
+$enable-shadows: true;
+
+//
+// Colors
+//
+
+$white: #ffffff;
+$gray-100: #f5f5f5;
+$gray-200: #eeeeee;
+$gray-300: #e0e0e0;
+$gray-400: #bdbdbd;
+$gray-500: #9e9e9e;
+$gray-600: #757575;
+$gray-700: #616161;
+$gray-800: #424242;
+$gray-900: #212121;
+$black: #000000;
+
+$grays: (
+  '100': $gray-100,
+  '200': $gray-200,
+  '300': $gray-300,
+  '400': $gray-400,
+  '500': $gray-500,
+  '600': $gray-600,
+  '700': $gray-700,
+  '800': $gray-800,
+  '900': $gray-900
+);
+
+$blue: #2196f3;
+$red: #ff1744;
+$yellow: #ffc107;
+$green: #4caf50;
+$cyan: #17a2b8;
+
+$colors: (
+  'red': $red,
+  'yellow': $yellow,
+  'green': $green,
+  'cyan': $cyan,
+  'white': $white,
+  'gray': $gray-500,
+  'gray-dark': $gray-700
+);
+
+$primary: $blue;
+$secondary: $gray-500;
+$success: $green;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$dark: $gray-800;
+
+$theme-colors: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'success': $success,
+  'info': $info,
+  'warning': $warning,
+  'danger': $danger,
+  'dark': $dark
+);
+
+$body-bg: $gray-100;
+$body-color: $gray-800;
+
+//
+// Spacing
+//
+
+$spacer: 8px;
+$spacers: (
+  0: 0,
+  '05': $spacer / 2,
+  1: $spacer,
+  2: $spacer * 2,
+  3: $spacer * 3,
+  4: $spacer * 4,
+  5: $spacer * 5,
+  6: $spacer * 6,
+  7: $spacer * 7,
+  8: $spacer * 8,
+  9: $spacer * 9,
+  10: $spacer * 10
+);
+
+//
+// Typography
+//
+
+$font-family-sans-serif: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+$font-icon: 'Material-Design-Iconic-Font';
+
+// base font-size (in px) is defined in _typography.scss
+$text-xs: 0.8571rem;
+$text-sm: 0.9286rem;
+$text-base: 1rem;
+$text-md: 1.143rem;
+$text-lg: 1.286rem;
+$text-xl: 1.429rem;
+
+$text-sizes: (
+  'xs': $text-xs,
+  'sm': $text-sm,
+  'md': $text-md,
+  'lg': $text-lg,
+  'xl': $text-xl
+);
+
+$font-size-base: 1rem;
+$font-size-lg: $text-lg;
+$font-size-sm: $text-sm;
+
+// because the project uses only these 2 weights
+$font-weight-light: 400;
+$font-weight-normal: 400;
+$font-weight-bold: 500;
+
+$display1-size: 1.714rem;
+$display2-size: 1.857rem;
+$display3-size: 2.142rem;
+$display4-size: 2.285rem;
+
+$display1-weight: 400;
+$display2-weight: 400;
+$display3-weight: 400;
+$display4-weight: 400;
+
+$h1-font-size: $display2-size;
+$h2-font-size: $display1-size;
+$h3-font-size: $text-xl;
+$h4-font-size: $text-lg;
+$h5-font-size: $text-md;
+$h6-font-size: $text-base;
+
+$headings-font-weight: 400;
+$headings-color: $gray-900;
+
+$lead-font-size: $display2-size;
+$lead-font-weight: 400;
+
+$small-font-size: $text-xs;
+
+$text-muted: $gray-400;
+
+$list-inline-padding: $spacer / 2;
+
+//
+// Grid
+//
+
+$grid-gutter-width: 24px;
+
+//
+// Icons
+//
+
+$icon-xs: 0.7143rem;
+$icon-sm: 0.8571rem;
+$icon-md: 1.143rem;
+$icon-lg: 1.286rem;
+$icon-xl: 2.285rem;
+
+$icon-sizes: (
+  'xs': $icon-xs,
+  'sm': $icon-sm,
+  'md': $icon-md,
+  'lg': $icon-lg,
+  'xl': $icon-xl
+);
+
+//
+// Z-index list (in completion of bootstrap's list)
+//
+
+$zindex-sidebar: 1080;
+
+//
+// Components
+//
+
+$sidebar-width: 250px;
+$border-radius: 0.1429rem;
+$border-color: $gray-300;
+
+//
+// Cards
+//
+
+$card-spacer-y: $spacer * 3;
+$card-spacer-x: $spacer * 3;
+$card-border-width: 0;
+$card-border-color: transparent;
+
+//
+//  Buttons
+//
+
+$btn-padding-x: 1.1428rem;
+$btn-padding-x-sm: 0.8571rem;
+$btn-padding-x-lg: 1.7142rem;
+$btn-line-height-lg: 1.7;
+$btn-focus-width: 0.1071rem;
+$btn-border-radius: $border-radius;
+$btn-border-radius-lg: $btn-border-radius;
+$btn-border-radius-sm: $btn-border-radius;
+
+$btn-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.02),
+                 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+                 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+
+$btn-active-box-shadow: 0px 4px 4px -3px rgba(0, 0, 0, 0.02),
+                        0px 5px 7px 1px rgba(0, 0, 0, 0.14),
+                        0px 3px 9px 2px rgba(0, 0, 0, 0.12);
+
+//
+// Forms
+//
+
+$input-padding-y: 0.5715rem;
+$input-padding-x: 0.8571rem;
+
+$form-text-margin-top: $spacer / 2;
+
+$input-bg: $gray-100;
+$input-disabled-bg: $gray-100;
+
+$input-color: $gray-900;
+$input-border-color: $primary;
+$input-box-shadow: none;
+
+$input-placeholder-color: $gray-500;
+
+$form-group-margin-bottom: $spacer * 3;
+
+$custom-select-padding-y: $input-padding-y;
+$custom-select-padding-x: $input-padding-x;
+$custom-select-height: 2.7143rem;
+$custom-select-indicator-padding: 1.5rem;
+
+$custom-select-bg: $input-bg;
+$custom-select-disabled-bg: $input-disabled-bg;
+$custom-select-bg-size: 16px; // In pixels because image dimensions
+$custom-select-indicator-color: $gray-700;
+$custom-select-indicator: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='#{$custom-select-indicator-color}' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E"), "#", "%23");
+
+$custom-select-focus-box-shadow: none;
+
+$input-group-addon-color: $gray-500;
+$input-group-addon-bg: $input-bg;
+
+$custom-control-gutter: $spacer * 3;
+$custom-control-spacer-x: $spacer * 2;
+
+$custom-control-indicator-size: $spacer * 2;
+$custom-control-indicator-bg: $white;
+$custom-control-indicator-box-shadow: none;
+$custom-radio-indicator-icon-checked: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='#{$primary}'/%3E%3C/svg%3E"), "#", "%23");
+
+//
+// Thumbnail
+//
+
+$thumbnail-sizes: (
+  'xs': $spacer * 3,
+  'sm': $spacer * 4,
+  'md': $spacer * 7,
+  'lg': $spacer * 10,
+  'xl': $spacer * 15
+);
+
+//
+// Navs
+//
+
+$nav-link-padding-y: 0.7142rem;
+$nav-link-padding-x: 1.143rem;
+
+$nav-pills-link-active-color: $gray-800;
+$nav-pills-link-active-bg: $gray-200;
+
+$nav-tabs-border-width: 0;
+$nav-tabs-border-radius: 0;
+$nav-tabs-link-hover-border-color: rgba($body-color, 0.3);
+$nav-tabs-link-active-color: $body-color;
+$nav-tabs-link-active-bg: transparent;
+$nav-tabs-link-active-border-color: $body-color;
+
+//
+// Dropdowns
+//
+
+$dropdown-min-width: 11rem;
+$dropdown-padding-y: 0;
+$dropdown-spacer: $spacer;
+$dropdown-border-width: 0;
+$dropdown-divider-bg: $gray-300;
+$dropdown-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.02), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+
+$dropdown-link-disabled-color: $gray-500;
+$dropdown-link-active-color: $gray-900;
+$dropdown-link-active-bg: $gray-200;
+
+$dropdown-item-padding-y: $spacer * 2;
+$dropdown-item-padding-x: $spacer * 3;
+
+$dropdown-header-color: $gray-500;
+
+//
+// Breadcrumbs
+//
+
+$breadcrumb-item-padding: $spacer;
+$breadcrumb-divider: '\f2fb';
+
+//
+// Badges
+//
+
+$badge-font-size: 86%;
+$badge-padding-y: 0.2857rem;
+$badge-padding-x: 0.5714rem;
+
+//
+// Tables
+//
+
+$table-cell-padding: $spacer * 2;
+
+$table-accent-bg: rgba($gray-100, 0.5);
+$table-hover-bg: $gray-100;

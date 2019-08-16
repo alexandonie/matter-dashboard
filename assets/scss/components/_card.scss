@@ -1,0 +1,27 @@
+.card {
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.02),
+              0 2px 2px 0 rgba(0, 0, 0, 0.14),
+              0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+/*
+  Achieving a horizontal gutter (row spacing) using the existing bootstrap grid system can be a bit tricky especially
+  in those more complex cases where we have nested rows and columns. As css grid isn't fully supported yet, we decided
+  to add the horizontal gutter effect using the card (used as a panel) by setting a margin bottom to it the same size
+  as the normal vertical gutter.
+*/
+.col > .card,
+[class*='col-'] > .card {
+  margin-bottom: $grid-gutter-width;
+}
+
+/*
+  to avoid unexpected sizes when using height helpers, we remove the gutter (margin-bottom) added above
+  (due to the bootstrap codebase we got forced into using !important)
+*/
+@each $size, $length in $sizes {
+  .col > .card.h-#{$size},
+  [class*='col-'] > .card.h-#{$size} {
+    height: calc(#{$length} - #{$grid-gutter-width}) !important;
+  }
+}

@@ -1,0 +1,16 @@
+.table {
+  thead th {
+    font-weight: $font-weight-bold;
+    color: $gray-500;
+    border-top: 0;
+    border-bottom-width: $border-width;
+  }
+
+  th, td {
+    padding: $table-cell-padding ($spacer * 3);
+
+    &:last-of-type {
+      text-align: right;
+    }
+  }
+}

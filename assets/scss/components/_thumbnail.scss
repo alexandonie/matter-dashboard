@@ -1,0 +1,16 @@
+.thumbnail {
+  display: inline-block;
+  width: 100%;
+  max-width: $spacer * 5;
+}
+
+@each $size, $value in $thumbnail-sizes {
+  .thumbnail-#{$size} {
+    max-width: $value;
+
+    &.thumbnail-fixed {
+      width: $value;
+      height: $value;
+    }
+  }
+}

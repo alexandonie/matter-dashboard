@@ -1,0 +1,29 @@
+// bootstrap functions (used in _settings.scss)
+@import 'vendors/bootstrap/functions';
+
+// config
+@import 'settings';
+
+// bootstrap
+@import 'vendors/bootstrap/bootstrap';
+
+// components
+@import
+  'components/typography',
+  'components/icon',
+  'components/card',
+  'components/button',
+  'components/forms',
+  'components/navs',
+  'components/header',
+  'components/thumbnail',
+  'components/sidebar',
+  'components/container',
+  'components/dropdown',
+  'components/breadcrumb',
+  'components/badge',
+  'components/table',
+  'components/chart';
+
+// helpers
+@import 'helpers';

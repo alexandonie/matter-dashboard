@@ -1,0 +1,37 @@
+/*
+  On top of .container and .container-fluid we added .container-main which is
+  used for the main layout only.
+*/
+
+.container-main {
+  width: 100%;
+  padding: 0 $spacer * 3;
+
+  &-overlap {
+    margin-top: -($spacer * 16);
+  }
+
+  @include media-breakpoint-up(md) {
+    &-overlap {
+      margin-top: -($spacer * 19);
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    width: calc(100% - #{$sidebar-width});
+    padding-right: $spacer * 5;
+    transform: translateX($sidebar-width);
+    will-change: transform;
+    transition: all 0.25s ease-in-out;
+
+    &-full {
+      width: 100%;
+      transform: translateX(0);
+      padding-left: $spacer * 5;
+    }
+
+    &-overlap {
+      margin-top: -($spacer * 21);
+    }
+  }
+}

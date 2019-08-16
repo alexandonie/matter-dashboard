@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="startupkit.design">
+
+  <title>Matter - A material design system built on top of bootstrap by startupkit.design</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.0.0/css/perfect-scrollbar.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-navbar">
+      <div class="header-navbar-details">
+        <button type="button" data-toggle="sidebar">
+          <i class="zmdi zmdi-menu" aria-hidden="true"></i>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+        <a href="index.html" class="d-block no-underline">
+          <h1 class="header-navbar-logo">Matter</h1>
+        </a>
+      </div> <!-- end of header-details -->
+
+      <form action="#" method="#" class="d-none d-md-block mr-xl-auto w-50">
+        <label for="globalSearch" class="sr-only">Global search</label>
+        <input type="text" class="form-control" id="globalSearch" placeholder="Search">
+      </form>
+
+      <ul class="list-inline d-flex mb-0">
+        <li class="list-inline-item">
+          <div class="dropdown">
+            <button
+              type="button"
+              class="px-0 py-0"
+              id="settingsDropdown"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <i class="zmdi zmdi-settings" aria-hidden="true"></i>
+              <span class="sr-only">Toggle settings dropdown</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="settingsDropdown">
+              <a class="dropdown-item" href="#0">General</a>
+              <a class="dropdown-item" href="#0">Privacy</a>
+              <a class="dropdown-item" href="#0">Users</a>
+              <div class="dropdown-divider"></div>
+              <h6 class="dropdown-header mt-2 mb-1">Accounts</h6>
+              <a class="dropdown-item py-1" href="https://www.instagram.com/alexandonie/" target="_blank">Instagram</a>
+              <a class="dropdown-item py-1 mb-1" href="https://twitter.com/alexandonie_" target="_blank">Twitter</a>
+            </div> <!-- end of dropdown-menu -->
+          </div> <!-- end of dropdown -->
+        </li>
+        <li class="list-inline-item">
+          <div class="dropdown">
+            <button
+              type="button"
+              class="px-0 py-0 has-notification"
+              id="notificationsDropdown"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <i class="zmdi zmdi-notifications" aria-hidden="true"></i>
+              <span class="sr-only">Toggle notifications dropdown</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg" aria-labelledby="notificationsDropdown">
+              <div class="dropdown-menu-scrollable" data-scrollable="true">
+                <a class="dropdown-item d-flex align-items-center" href="#0">
+                  <span class="thumbnail thumbnail-sm thumbnail-fixed bg-primary text-light rounded-circle d-flex align-items-center justify-content-center mr-1">
+                    <i class="zmdi zmdi-email" aria-hidden="true"></i>
+                  </span>
+                  <span>
+                    <strong class="d-block">3 new messages</strong>
+                    <small class="text-secondary">alex@startupkit.design</small>
+                  </span>
+                </a> <!-- end of dropdown-item -->
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item d-flex align-items-center" href="#0">
+                  <span class="thumbnail thumbnail-sm thumbnail-fixed bg-warning text-light rounded-circle d-flex align-items-center justify-content-center mr-1">
+                    <i class="zmdi zmdi-cloud" aria-hidden="true"></i>
+                  </span>
+                  <span>
+                    <strong class="d-block">32 degrees - Partly Cloudy</strong>
+                    <small class="text-secondary">London, United Kingdom</small>
+                  </span>
+                </a> <!-- end of dropdown-item -->
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item d-flex align-items-center" href="#0">
+                  <span class="thumbnail thumbnail-sm thumbnail-fixed bg-secondary text-light rounded-circle d-flex align-items-center justify-content-center mr-1">
+                    <i class="zmdi zmdi-camera" aria-hidden="true"></i>
+                  </span>
+                  <span>
+                    <strong class="d-block">Screenshot captured</strong>
+                    <small class="text-secondary">Click to preview</small>
+                  </span>
+                </a> <!-- end of dropdown-item -->
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item d-flex align-items-center" href="#0">
+                  <span class="thumbnail thumbnail-sm thumbnail-fixed bg-danger text-light rounded-circle d-flex align-items-center justify-content-center mr-1">
+                    <i class="zmdi zmdi-instagram" aria-hidden="true"></i>
+                  </span>
+                  <span>
+                    <strong class="d-block">Jason liked your post</strong>
+                    <small class="text-secondary">Instagram</small>
+                  </span>
+                </a> <!-- end of dropdown-item -->
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item d-flex align-items-center" href="#0">
+                  <span class="thumbnail thumbnail-sm thumbnail-fixed bg-info text-light rounded-circle d-flex align-items-center justify-content-center mr-1">
+                    <i class="zmdi zmdi-phone" aria-hidden="true"></i>
+                  </span>
+                  <span>
+                    <strong class="d-block">2 missed calls</strong>
+                    <small class="text-secondary">Today, 10:22 PM</small>
+                  </span>
+                </a> <!-- end of dropdown-item -->
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item d-flex align-items-center" href="#0">
+                  <span class="thumbnail thumbnail-sm thumbnail-fixed bg-success text-light rounded-circle d-flex align-items-center justify-content-center mr-1">
+                    <i class="zmdi zmdi-comment" aria-hidden="true"></i>
+                  </span>
+                  <span>
+                    <strong class="d-block">George Pierce</strong>
+                    <small class="text-secondary">Hei man! How are you? Are we stil...</small>
+                  </span>
+                </a> <!-- end of dropdown-item -->
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item d-flex align-items-center" href="#0">
+                  <span class="thumbnail thumbnail-sm thumbnail-fixed bg-secondary text-light rounded-circle d-flex align-items-center justify-content-center mr-1">
+                    <i class="zmdi zmdi-check-all" aria-hidden="true"></i>
+                  </span>
+                  <span>
+                    <strong class="d-block">Message sent successfully</strong>
+                    <small class="text-secondary">Tuesday, 11:55 AM</small>
+                  </span>
+                </a> <!-- end of dropdown-item -->
+              </div> <!-- end of dropdown-menu-scrollable -->
+              <div class="dropdown-divider"></div>
+              <div class="py-1 px-1">
+                <button type="button" class="btn btn-text btn-secondary btn-block">View all</button>
+              </div>
+            </div> <!-- end of dropdown-menu -->
+          </div> <!-- end of dropdown -->
+        </li>
+        <li class="list-inline-item ml-1">
+          <div class="dropdown">
+            <button
+              type="button"
+              class="px-0 py-0"
+              id="profileDropdown"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Toggle profile options dropdown</span>
+              <img src="assets/img/avatar-1.jpg" class="thumbnail thumbnail-sm rounded-circle" alt="User Avatar" />
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="profileDropdown">
+              <a class="dropdown-item" href="#0">Profile</a>
+              <a class="dropdown-item" href="#0">Messages</a>
+              <a class="dropdown-item" href="#0">Settings</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="login.html">Logout</a>
+            </div> <!-- end of dropdown-menu -->
+          </div> <!-- end of dropdown -->
+        </li>
+      </ul>
+    </div> <!-- end of header-navbar -->
+    <div class="header-billboard">
+      <div class="header-billboard-inner container-main">
+      </div> <!-- end of header-billboard-inner -->
+    </div> <!-- end of header-billboard -->
+  </header>
+
+  <div class="d-flex align-items-start mt-3 mb-8 position-relative">
+    <aside class="sidebar" data-scrollable="true">
+      <div class="sidebar-brand">
+        <h1 class="text-xl text-light my-0">Matter</h1>
+      </div> <!-- end of sidebar-brand -->
+      <nav class="sidebar-main-nav">
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center" href="index.html">
+              <i class="zmdi zmdi-home icon icon-md mr-2" aria-hidden="true"></i>
+              Dashboard
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center" href="buttons.html">
+              <i class="zmdi zmdi-layers icon icon-md mr-2" aria-hidden="true"></i>
+              Components
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center active" href="pages.html">
+              <i class="zmdi zmdi-file icon icon-md mr-2" aria-hidden="true"></i>
+              Pages
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center" href="#0">
+              <i class="zmdi zmdi-widgets icon icon-md mr-2" aria-hidden="true"></i>
+              Widgets
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center" href="#0">
+              <i class="zmdi zmdi-apps icon icon-md mr-2" aria-hidden="true"></i>
+              Apps
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="sidebar-secondary-nav">
+        <span class="d-block mb-3 text-sm text-uppercase text-muted font-weight-bold">Components</span>
+        <ul class="list-unstyled">
+          <li class="mb-3">
+            <a href="buttons.html" class="d-flex align-items-center justify-content-between text-dark no-underline">
+              Buttons
+              <span class="d-block text-secondary">15</span>
+            </a>
+          </li>
+          <li class="mb-3">
+            <a href="charts.html" class="d-flex align-items-center justify-content-between text-dark no-underline">
+              Charts
+              <span class="d-block text-secondary">3</span>
+            </a>
+          </li>
+          <li class="mb-3">
+            <a href="forms.html" class="d-flex align-items-center justify-content-between text-dark no-underline">
+              Forms
+              <span class="d-block text-secondary">20</span>
+            </a>
+          </li>
+          <li class="mb-3">
+            <a href="tables.html" class="d-flex align-items-center justify-content-between text-dark no-underline">
+              Tables
+              <span class="d-block text-secondary">2</span>
+            </a>
+          </li>
+          <li>
+            <a href="typography.html" class="d-flex align-items-center justify-content-between text-dark no-underline">
+              Typography
+              <span class="d-block text-secondary">9</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="sidebar-secondary-nav">
+        <span class="d-block mb-3 text-sm text-uppercase text-muted font-weight-bold">Libraries</span>
+        <ul class="list-unstyled">
+          <li class="mb-3">
+            <a href="https://jquery.com/" target="_blank" class="text-dark">jQuery</a>
+          </li>
+          <li class="mb-3">
+            <a href="http://getbootstrap.com/" target="_blank" class="text-dark">Bootstrap</a>
+          </li>
+          <li class="mb-3">
+            <a href="https://popper.js.org/" target="_blank" class="text-dark">Popper.js</a>
+          </li>
+          <li>
+            <a href="http://www.chartjs.org/" target="_blank" class="text-dark">Chartjs</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="sidebar-backdrop" data-toggle="sidebar"></div>
+
+    <main class="container-main container-main-overlap">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-primary">
+          <li class="breadcrumb-item">
+            <a href="index.html">Startupkit</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="index.html">My dashboard</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Pages</li>
+        </ol>
+      </nav>
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="text-md">Available pages inside Matter</h2>
+              <p class="mb-4 text-secondary">More to come soon</p>
+
+              <ul class="list-unstyled row mb-1">
+                <li class="col-12 col-sm-6 col-lg-4 mb-3">
+                  <a href="index.html">
+                    <img class="d-block w-100" src="assets/img/page-1.jpg" alt="Matter's dashboard">
+                  </a>
+                </li>
+                <li class="col-12 col-sm-6 col-lg-4 mb-3">
+                  <a href="login.html">
+                    <img class="d-block w-100" src="assets/img/page-2.jpg" alt="Matter's login">
+                  </a>
+                </li>
+                <li class="col-12 col-sm-6 col-lg-4 mb-3">
+                  <a href="charts.html">
+                    <img class="d-block w-100" src="assets/img/page-3.jpg" alt="Matter's charts">
+                  </a>
+                </li>
+                <li class="col-12 col-sm-6 col-lg-4 mb-3">
+                  <a href="register.html">
+                    <img class="d-block w-100" src="assets/img/page-4.jpg" alt="Matter's register">
+                  </a>
+                </li>
+                <li class="col-12 col-sm-6 col-lg-4 mb-3">
+                  <a href="tables.html">
+                    <img class="d-block w-100" src="assets/img/page-5.jpg" alt="Matter's components">
+                  </a>
+                </li>
+                <li class="col-12 col-sm-6 col-lg-4 mb-3">
+                  <a href="lock.html">
+                    <img class="d-block w-100" src="assets/img/page-6.jpg" alt="Matter's lock">
+                  </a>
+                </li>
+                <li class="col-12 col-sm-6 col-lg-4 mb-3">
+                  <a href="buttons.html">
+                    <img class="d-block w-100" src="assets/img/page-7.jpg" alt="Matter's buttons">
+                  </a>
+                </li>
+                <li class="col-12 col-sm-6 col-lg-4 mb-3">
+                  <a href="https://startupkit.design">
+                    <img class="d-block w-100" src="assets/img/page-8.jpg" alt="https://startupkit.design">
+                  </a>
+                </li>
+              </ul>
+
+              <a
+                href="https://www.instagram.com/alexandonie/"
+                target="_blank"
+                class="text-uppercase font-weight-bold text-sm"
+              >
+                Follow the progress
+              </a>
+            </div> <!-- end of card-body -->
+          </div> <!-- end of card -->
+        </div> <!-- end of col -->
+      </div> <!-- end of row -->
+
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="mb-4 text-md">Attribution-free version</h2>
+              <p>
+                The version you are currently browsing is the free version released under the CCA 4.0 license
+                (<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
+                https://creativecommons.org/licenses/by/4.0/</a>). This license allows the use of this product for
+                personal as well as commercial reasons as long as appropriate credit is given. More details about the
+                license can be found
+                <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">here</a> and
+                <a href="https://creativecommons.org/licenses/by/4.0/legalcode" target="_blank">here</a>.
+              </p>
+              <p class="mb-3">
+                The pro version of Matter not only that it is attribution-free but it is also much richer in components
+                and pages. On top of that it comes with a build system, documentation that contains a migration guide
+                for the major releases and instant support via slack. Pro members will also have access to the git repo
+                of the project for faster updates and an easier collaboration process. Speaking of collaboration,
+                another perk of the pro version is that you’ll become a part of the product as you’ll be able to
+                propose changes, features and improvements. A more detailed list of the perks can be found on our
+                <a href="https://startupkit.design/dashboard/matter">website</a>.
+              </p>
+              <a href="https://startupkit.design/dashboard/matter#pricing" class="btn btn-primary">
+                Upgrade to PRO
+              </a>
+            </div> <!-- end of card-body -->
+          </div> <!-- end of card -->
+        </div> <!-- end of col -->
+      </div> <!-- end of row -->
+
+      <footer class="row mt-3">
+        <div class="col">
+          <p class="mb-0 text-secondary">&copy; 2018 Startupkit. All rights reserved.</p>
+        </div>
+      </footer>
+    </main> <!-- end of container-fluid -->
+  </div> <!-- end of d-flex -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.3.0/perfect-scrollbar.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

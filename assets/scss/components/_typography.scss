@@ -1,0 +1,31 @@
+html, body {
+  font-size: 14px;
+
+  // making sure the fonts will render the same across different web browsers
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $headings-color;
+}
+
+p { margin-bottom: 1.143rem; }
+
+b, strong {
+  font-weight: $font-weight-bold;
+}
+
+// size helpers
+@each $size, $value in $text-sizes {
+  .text-#{$size} {
+    font-size: $value;
+  }
+}
+
+// decoration helper
+.no-underline,
+.no-underline:hover {
+  text-decoration: none;
+}

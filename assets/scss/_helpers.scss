@@ -1,0 +1,29 @@
+.scroll-disabled {
+  height: 100%;
+  overflow: hidden;
+}
+
+[data-scrollable="true"] {
+  overflow: hidden;
+  -ms-overflow-style: none;
+}
+
+.has-notification {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    right: -3px;
+    display: block;
+    width: 9px;
+    height: 9px;
+    border-radius: 9px;
+    background: $danger;
+  }
+}
+
+.vh-100 { min-height: 100vh; }
+
+.overflow-hidden { overflow: hidden; }

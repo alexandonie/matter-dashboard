@@ -1,0 +1,41 @@
+.dropdown-divider {
+  margin: 0;
+}
+
+.dropdown-header {
+  font-size: $text-xs;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+}
+
+.dropdown-item {
+  line-height: 1.2;
+
+  &:first-of-type {
+    border-top-right-radius: $border-radius;
+    border-top-left-radius: $border-radius;
+  }
+
+  &:last-of-type {
+    border-bottom-right-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
+  }
+}
+
+.dropdown-menu-lg {
+  min-width: 277px;
+
+  .dropdown-item {
+    padding-right: $spacer * 2;
+    padding-left: $spacer * 2;
+    line-height: 1.25;
+  }
+}
+
+.dropdown-menu-scrollable {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  height: 360px;
+  // the rest is taken care of by the PerfectScrollbar plugin.
+}

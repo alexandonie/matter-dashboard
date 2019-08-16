@@ -1,0 +1,19 @@
+.badge {
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+@each $color, $value in $theme-colors {
+  .badge-#{$color} {
+    color: $value;
+    background: rgba($value, 0.15);
+  }
+}
+
+.badge-light {
+  @include badge-variant($light);
+}
+
+.badge-dark {
+  @include badge-variant($dark);
+}

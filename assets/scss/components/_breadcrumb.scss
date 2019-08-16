@@ -1,0 +1,41 @@
+.breadcrumb {
+  &-item:before {
+    font-family: $font-icon;
+  }
+}
+
+.breadcrumb-primary {
+  margin-bottom: $spacer * 3;
+  padding: 0;
+  background: none;
+
+  .breadcrumb-item {
+    &:before, a, &.active {
+      color: $white;
+    }
+
+    &.active {
+      opacity: 0.8;
+    }
+
+    &:before {
+      padding: 0 1rem;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .breadcrumb-primary {
+    font-size: $text-md;
+
+    .breadcrumb-item:before {
+      padding: 0 $spacer * 2;
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .breadcrumb-primary {
+    font-size: $text-lg;
+  }
+}

@@ -1,0 +1,112 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: calc(100% - #{$spacer} * 8);
+  padding-top: $spacer * 3;
+  padding-right: $spacer * 3;
+  padding-left: calc(#{$spacer * 3} + #{$nav-link-padding-x});
+  padding-bottom: $spacer * 5;
+  box-sizing: border-box;
+  background: $white;
+  z-index: $zindex-sidebar;
+  transform: translateX(calc(-100% - #{$spacer} * 8));
+  will-change: transform;
+  transition: transform 0.25s ease-in-out;
+
+  &-brand {
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: -($spacer * 3);
+    margin-right: -($spacer * 3);
+    margin-bottom: $spacer * 3;
+    margin-left: -($spacer * 5);
+    padding: ($spacer * 2) ($spacer * 3) ($spacer * 2) ($spacer * 5);
+    background: $primary;
+  }
+
+  &-main-nav {
+    margin-left: -$nav-link-padding-x;
+
+    .nav-link {
+      font-size: 1.071rem;
+    }
+  }
+
+  &-secondary-nav {
+    margin-top: $spacer * 4;
+    padding-top: $spacer * 4;
+    border-top: 1px solid $border-color;
+
+    li {
+      line-height: 1.2;
+    }
+  }
+
+  &-backdrop {
+    visibility: hidden;
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    z-index: $zindex-sidebar - 1;
+    transition: opacity 0.25s ease-in-out;
+  }
+
+  &-open {
+    box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.02),
+                0 16px 24px 2px rgba(0, 0, 0, 0.14),
+                0 6px 30px 5px rgba(0, 0, 0, 0.12);
+    transform: translateX(0);
+  }
+
+  &-open + &-backdrop {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .sidebar {
+    width: $sidebar-width + $spacer * 8;
+    transform: translateX(-($sidebar-width + $spacer * 8));
+
+    &-open {
+      transform: translateX(0);
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .sidebar {
+    position: absolute;
+    width: $sidebar-width;
+    padding-top: 0;
+    background: none;
+    box-shadow: none;
+    transform: translateX(0);
+    z-index: 1;
+
+    &-fixed {
+      position: fixed;
+      top: $spacer * 7;
+      padding-top: $spacer * 3;
+    }
+
+    &-open {
+      transform: translateX(-$sidebar-width);
+    }
+
+    &-brand,
+    &-backdrop,
+    &-open + &-backdrop {
+      display: none;
+    }
+  }
+}

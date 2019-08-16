@@ -1,0 +1,12 @@
+.icon {
+  display: inline-block;
+  font-size: 1rem;
+  text-align: center;
+}
+
+@each $size, $value in $icon-sizes {
+  .icon-#{$size} {
+    width: $value;
+    font-size: $value;
+  }
+}

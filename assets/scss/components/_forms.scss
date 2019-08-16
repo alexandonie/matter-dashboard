@@ -1,0 +1,73 @@
+label,
+.form-label {
+  margin-bottom: $spacer / 2;
+  line-height: 1.2;
+}
+
+.form-control,
+.custom-select {
+  border: none;
+  border-bottom: $input-border-width solid $input-border-color;
+  border-radius: $input-border-radius $input-border-radius 0 0;
+
+  &:disabled,
+  &[readonly] {
+    border-color: $gray-400;
+    cursor: not-allowed;
+  }
+
+  &.is-valid:focus,
+  &.is-invalid:focus {
+    box-shadow: none;
+  }
+
+  &.is-valid:focus {
+    border-color: rgba($form-feedback-valid-color, 0.5);
+  }
+
+  &.is-invalid:focus {
+    border-color: rgba($form-feedback-invalid-color, 0.5);
+  }
+}
+
+select:required:invalid {
+  color: $input-placeholder-color;
+}
+
+.input-group {
+  & > .form-control + .form-control {
+    border-left: 2px solid $white;
+  }
+
+  &-append,
+  &-prepend {
+    margin: 0;
+  }
+
+  &-text {
+    border-radius: 0;
+    border: 0;
+    border-bottom: $input-border-width solid $input-border-color;
+  }
+}
+
+.custom-control-label {
+  &:before,
+  &:after {
+    top: 0.1428rem;
+  }
+
+  &:before {
+    border: 2px solid $gray-300;
+  }
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label:before,
+.custom-radio .custom-control-input:checked ~ .custom-control-label:before {
+  border-color: $custom-control-indicator-checked-bg;
+}
+
+.custom-radio .custom-control-input:checked ~ .custom-control-label:before {
+  background: $white;
+}
+

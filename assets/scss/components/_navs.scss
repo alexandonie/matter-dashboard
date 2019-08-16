@@ -1,0 +1,63 @@
+// nav pills
+.nav-pills {
+  .nav-item {
+    margin-bottom: $spacer / 2;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .nav-link {
+    color: $gray-800;
+
+    &:hover {
+      background: $nav-pills-link-active-bg;
+    }
+  }
+}
+
+// nav tabs
+.nav-tabs {
+  position: relative;
+  right: 0;
+  left: 0;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  text-transform: uppercase;
+  font-weight: $font-weight-bold;
+
+  .nav-link {
+    font-size: $text-sm;
+    line-height: 1;
+    color: $body-color;
+    border-bottom-width: 2px;
+
+    &:hover {
+      background: rgba($body-color, 0.05);
+    }
+  }
+}
+
+.nav-tabs-lg {
+  .nav-link {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.nav-tabs-light {
+  .nav-link {
+    color: $white;
+
+    &:hover {
+      border-color: rgba($white, 0.7);
+      background: rgba($white, 0.15);
+    }
+
+    &.active {
+      color: white;
+      border-color: $white;
+    }
+  }
+}
