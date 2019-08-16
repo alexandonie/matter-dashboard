@@ -1,0 +1,24 @@
+# See https://help.github.com/articles/ignoring-files/ for more details about ignoring files.
+
+# dependencies
+node_modules
+
+# testing
+tests
+
+# production
+dist/
+build/
+
+# misc
+.DS_Store
+.env
+.cache
+npm-debug.log
+.sass-cache
+*.dmb
+*.rsc
+*.int
+*.lk
+*.zip
+.tmp
