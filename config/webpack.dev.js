@@ -28,6 +28,9 @@ module.exports = merge(common, {
             }
           },
           {
+            loader: 'resolve-url-loader'
+          },
+          {
             loader: 'sass-loader',
             options: {
               sourceMap: true

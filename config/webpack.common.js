@@ -11,14 +11,27 @@ module.exports = {
     rules: [
       {
         test: /\.html/,
-        loader: 'html-loader'
+        loader: 'html-loader',
+        options: {
+          interpolate: true
+        }
       },
       {
         test: /\.hbs$/,
-        loader: 'handlebars-loader',
-        query: {
-          inlineRequires: '/images/'
-        }
+        use: [
+          {
+            loader: 'handlebars-loader'
+          },
+          {
+            loader: 'extract-loader'
+          },
+          {
+            loader: 'html-loader',
+            options: {
+              interpolate: true
+            }
+          }
+        ]
       },
       {
         test: /\.(svg|png|jpg|jpeg|gif)$/,

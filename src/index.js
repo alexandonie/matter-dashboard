@@ -1,6 +1,7 @@
 import './styles/main.scss';
 
 import 'bootstrap';
+
 import Navigation from './scripts/Navigation';
 import ScrollableComponents from './scripts/ScrollableComponents';
 import Charts from './scripts/Charts';
