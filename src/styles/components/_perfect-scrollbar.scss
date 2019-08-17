@@ -1,0 +1,11 @@
+@import '~perfect-scrollbar/css/perfect-scrollbar';
+
+/*
+  Workaround for issue #792
+  https://github.com/mdbootstrap/perfect-scrollbar/issues/792
+
+  To be deleted after the issue is fixed
+*/
+.ps__rail-y {
+  left: auto !important;
+}
