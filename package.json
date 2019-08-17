@@ -5,7 +5,7 @@
   "description": "Matter dashboard, a free material design bootstrap dashboard",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config ./config/webpack.dev.js",
+    "dev": "webpack-dev-server --config ./config/webpack.dev.js",
     "build": "webpack --config ./config/webpack.prod.js"
   },
   "repository": {

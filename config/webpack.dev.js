@@ -42,7 +42,6 @@ module.exports = merge(common, {
   ],
   devServer: {
     contentBase: paths.dist,
-    open: true,
     host: process.env.HOST || '0.0.0.0',
     port: 3000,
     public: 'http://localhost:3000',
