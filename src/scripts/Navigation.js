@@ -1,9 +1,9 @@
 class Navigation {
   constructor () {
     this.body = document.querySelector('body');
-    this.toggleBtn = document.querySelector('[data-toggle="sidebar"]');
+    this.toggleBtn = document.querySelectorAll('[data-toggle="sidebar"]');
     this.sidebar = document.querySelector('.sidebar');
-    this.mainContent = document.querySelector('.container-main');
+    this.mainContent = document.querySelectorAll('.container-main');
     this.sidebarOpenClass = 'sidebar-open';
     this.sidebarFixedClass = 'sidebar-fixed';
     this.mainContentOpenClass = 'container-main-full';
@@ -26,8 +26,13 @@ class Navigation {
       this.body.classList.toggle(this.scrollDisabledClass);
     }
 
+    // show/hide sidebar navigation
     this.sidebar.classList.toggle(this.sidebarOpenClass);
-    this.mainContent.classList.toggle(this.mainContentOpenClass);
+
+    // expand/shrink the main containers based on the sidebar nav
+    this.mainContent.forEach(container => {
+      container.classList.toggle(this.mainContentOpenClass);
+    });
   }
 
   enableStickyNavigation () {
@@ -49,7 +54,9 @@ class Navigation {
   }
 
   init () {
-    this.toggleBtn.addEventListener('click', this.toggle.bind(this));
+    this.toggleBtn.forEach(toggleElem => {
+      toggleElem.addEventListener('click', this.toggle.bind(this));
+    });
     this.enableStickyNavigation();
   }
 }
