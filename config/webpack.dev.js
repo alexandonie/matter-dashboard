@@ -48,6 +48,11 @@ module.exports = merge(common, {
     host: process.env.HOST || '0.0.0.0',
     port: 3000,
     public: 'http://localhost:3000',
-    overlay: true
+    overlay: true,
+    progress: true,
+    stats: {
+      children: false,
+      maxModules: 0
+    }
   }
 });
