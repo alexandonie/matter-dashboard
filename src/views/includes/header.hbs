@@ -1,0 +1,172 @@
+<header class="header">
+  <div class="header-navbar {{#unless secondaryNav}}header-navbar-has-shadow{{/unless}}">
+    <div class="header-navbar-details">
+      <button type="button" data-toggle="sidebar">
+        <i class="zmdi zmdi-menu" aria-hidden="true"></i>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+      <a href="/" class="d-block no-underline">
+        <h1 class="header-navbar-logo">Matter</h1>
+      </a>
+    </div> <!-- end of header-details -->
+
+    <form action="#" method="#" class="d-none d-md-block mr-xl-auto w-50">
+      <label for="globalSearch" class="sr-only">Global search</label>
+      <input type="text" class="form-control" id="globalSearch" placeholder="Search">
+    </form>
+
+    <ul class="list-inline d-flex mb-0">
+      <li class="list-inline-item">
+        <div class="dropdown">
+          <button type="button" class="px-0 py-0" id="settingsDropdown" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <i class="zmdi zmdi-settings" aria-hidden="true"></i>
+            <span class="sr-only">Toggle settings dropdown</span>
+          </button>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="settingsDropdown">
+            <a class="dropdown-item" href="#0">General</a>
+            <a class="dropdown-item" href="#0">Privacy</a>
+            <a class="dropdown-item" href="#0">Users</a>
+            <div class="dropdown-divider"></div>
+            <h6 class="dropdown-header mt-2 mb-1">Accounts</h6>
+            <a class="dropdown-item py-1" href="https://www.instagram.com/alexandonie/" target="_blank">Instagram</a>
+            <a class="dropdown-item py-1 mb-1" href="https://twitter.com/alexandonie_" target="_blank">Twitter</a>
+          </div> <!-- end of dropdown-menu -->
+        </div> <!-- end of dropdown -->
+      </li>
+      <li class="list-inline-item">
+        <div class="dropdown">
+          <button type="button" class="px-0 py-0 has-notification" id="notificationsDropdown" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <i class="zmdi zmdi-notifications" aria-hidden="true"></i>
+            <span class="sr-only">Toggle notifications dropdown</span>
+          </button>
+          <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg" aria-labelledby="notificationsDropdown">
+            <div class="dropdown-menu-scrollable" data-scrollable="true">
+              <a class="dropdown-item d-flex align-items-center" href="#0">
+                <span
+                  class="thumbnail thumbnail-sm thumbnail-fixed bg-primary text-light rounded-circle d-flex align-items-center justify-content-center mr-1">
+                  <i class="zmdi zmdi-email" aria-hidden="true"></i>
+                </span>
+                <span>
+                  <strong class="d-block">3 new messages</strong>
+                  <small class="text-secondary">alex@startupkit.design</small>
+                </span>
+              </a> <!-- end of dropdown-item -->
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item d-flex align-items-center" href="#0">
+                <span
+                  class="thumbnail thumbnail-sm thumbnail-fixed bg-warning text-light rounded-circle d-flex align-items-center justify-content-center mr-1">
+                  <i class="zmdi zmdi-cloud" aria-hidden="true"></i>
+                </span>
+                <span>
+                  <strong class="d-block">32 degrees - Partly Cloudy</strong>
+                  <small class="text-secondary">London, United Kingdom</small>
+                </span>
+              </a> <!-- end of dropdown-item -->
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item d-flex align-items-center" href="#0">
+                <span
+                  class="thumbnail thumbnail-sm thumbnail-fixed bg-secondary text-light rounded-circle d-flex align-items-center justify-content-center mr-1">
+                  <i class="zmdi zmdi-camera" aria-hidden="true"></i>
+                </span>
+                <span>
+                  <strong class="d-block">Screenshot captured</strong>
+                  <small class="text-secondary">Click to preview</small>
+                </span>
+              </a> <!-- end of dropdown-item -->
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item d-flex align-items-center" href="#0">
+                <span
+                  class="thumbnail thumbnail-sm thumbnail-fixed bg-danger text-light rounded-circle d-flex align-items-center justify-content-center mr-1">
+                  <i class="zmdi zmdi-instagram" aria-hidden="true"></i>
+                </span>
+                <span>
+                  <strong class="d-block">Jason liked your post</strong>
+                  <small class="text-secondary">Instagram</small>
+                </span>
+              </a> <!-- end of dropdown-item -->
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item d-flex align-items-center" href="#0">
+                <span
+                  class="thumbnail thumbnail-sm thumbnail-fixed bg-info text-light rounded-circle d-flex align-items-center justify-content-center mr-1">
+                  <i class="zmdi zmdi-phone" aria-hidden="true"></i>
+                </span>
+                <span>
+                  <strong class="d-block">2 missed calls</strong>
+                  <small class="text-secondary">Today, 10:22 PM</small>
+                </span>
+              </a> <!-- end of dropdown-item -->
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item d-flex align-items-center" href="#0">
+                <span
+                  class="thumbnail thumbnail-sm thumbnail-fixed bg-success text-light rounded-circle d-flex align-items-center justify-content-center mr-1">
+                  <i class="zmdi zmdi-comment" aria-hidden="true"></i>
+                </span>
+                <span>
+                  <strong class="d-block">George Pierce</strong>
+                  <small class="text-secondary">Hei man! How are you? Are we stil...</small>
+                </span>
+              </a> <!-- end of dropdown-item -->
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item d-flex align-items-center" href="#0">
+                <span
+                  class="thumbnail thumbnail-sm thumbnail-fixed bg-secondary text-light rounded-circle d-flex align-items-center justify-content-center mr-1">
+                  <i class="zmdi zmdi-check-all" aria-hidden="true"></i>
+                </span>
+                <span>
+                  <strong class="d-block">Message sent successfully</strong>
+                  <small class="text-secondary">Tuesday, 11:55 AM</small>
+                </span>
+              </a> <!-- end of dropdown-item -->
+            </div> <!-- end of dropdown-menu-scrollable -->
+            <div class="dropdown-divider"></div>
+            <div class="py-1 px-1">
+              <button type="button" class="btn btn-text btn-secondary btn-block">View all</button>
+            </div>
+          </div> <!-- end of dropdown-menu -->
+        </div> <!-- end of dropdown -->
+      </li>
+      <li class="list-inline-item ml-1">
+        <div class="dropdown">
+          <button type="button" class="px-0 py-0" id="profileDropdown" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <span class="sr-only">Toggle profile options dropdown</span>
+            <img src="../../images/avatar-1.jpg" class="thumbnail thumbnail-sm rounded-circle" alt="User Avatar" />
+          </button>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="profileDropdown">
+            <a class="dropdown-item" href="#0">Profile</a>
+            <a class="dropdown-item" href="#0">Messages</a>
+            <a class="dropdown-item" href="#0">Settings</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/login">Logout</a>
+          </div> <!-- end of dropdown-menu -->
+        </div> <!-- end of dropdown -->
+      </li>
+    </ul>
+  </div> <!-- end of header-navbar -->
+
+  {{#if secondaryNav}}
+    <div class="header-billboard" style="background-image: url('${require('../../images/header-billboard-bg.jpg')}');">
+      <div class="header-billboard-inner container-main">
+        <ul class="nav nav-tabs nav-tabs-light nav-tabs-lg" data-scrollable="true" data-suppress-scroll-y="true">
+          <li class="nav-item">
+            <a href="/buttons" class="nav-link {{#if (eq currentPage "buttons")}}active{{/if}}">Buttons</a>
+          </li>
+          <li class="nav-item">
+            <a href="/charts" class="nav-link {{#if (eq currentPage "charts")}}active{{/if}}">Charts</a>
+          </li>
+          <li class="nav-item {{#if (eq currentPage "forms")}}active{{/if}}">
+            <a href="/forms" class="nav-link">Forms</a>
+          </li>
+          <li class="nav-item {{#if (eq currentPage "tables")}}active{{/if}}">
+            <a href="/tables" class="nav-link">Tables</a>
+          </li>
+          <li class="nav-item {{#if (eq currentPage "typography")}}active{{/if}}">
+            <a href="/typography" class="nav-link">Typography</a>
+          </li>
+        </ul>
+      </div> <!-- end of header-billboard-inner -->
+    </div> <!-- end of header-billboard -->
+  {{/if}}
+</header>

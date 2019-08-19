@@ -1,0 +1,98 @@
+<aside
+  class="sidebar {{#unless secondaryNav}}sidebar-fixed{{/unless}}"
+  data-scrollable="true"
+>
+  <div class="sidebar-brand">
+    <h1 class="text-xl text-light my-0">Matter</h1>
+  </div> <!-- end of sidebar-brand -->
+  <nav class="sidebar-main-nav">
+    <ul class="nav nav-pills flex-column">
+      <li class="nav-item">
+        <a class="nav-link d-flex align-items-center {{#if (eq currentPage "home")}}active{{/if}}" href="/">
+          <i class="zmdi zmdi-home icon icon-md mr-2" aria-hidden="true"></i>
+          Dashboard
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link d-flex align-items-center {{#unless (eq currentPage "home")}}active{{/unless}}"
+          href="/buttons"
+        >
+          <i class="zmdi zmdi-layers icon icon-md mr-2" aria-hidden="true"></i>
+          Components
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link d-flex align-items-center {{#if (eq currentPage "pages")}}active{{/if}}" href="/pages">
+          <i class="zmdi zmdi-file icon icon-md mr-2" aria-hidden="true"></i>
+          Pages
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link d-flex align-items-center" href="#0">
+          <i class="zmdi zmdi-widgets icon icon-md mr-2" aria-hidden="true"></i>
+          Widgets
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link d-flex align-items-center" href="#0">
+          <i class="zmdi zmdi-apps icon icon-md mr-2" aria-hidden="true"></i>
+          Apps
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <nav class="sidebar-secondary-nav">
+    <span class="d-block mb-3 text-sm text-uppercase text-muted font-weight-bold">Components</span>
+    <ul class="list-unstyled">
+      <li class="mb-3">
+        <a href="/buttons" class="d-flex align-items-center justify-content-between text-dark no-underline">
+          Buttons
+          <span class="d-block text-secondary">15</span>
+        </a>
+      </li>
+      <li class="mb-3">
+        <a href="/charts" class="d-flex align-items-center justify-content-between text-dark no-underline">
+          Charts
+          <span class="d-block text-secondary">3</span>
+        </a>
+      </li>
+      <li class="mb-3">
+        <a href="/forms" class="d-flex align-items-center justify-content-between text-dark no-underline">
+          Forms
+          <span class="d-block text-secondary">20</span>
+        </a>
+      </li>
+      <li class="mb-3">
+        <a href="/tables" class="d-flex align-items-center justify-content-between text-dark no-underline">
+          Tables
+          <span class="d-block text-secondary">2</span>
+        </a>
+      </li>
+      <li>
+        <a href="/typography" class="d-flex align-items-center justify-content-between text-dark no-underline">
+          Typography
+          <span class="d-block text-secondary">9</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <nav class="sidebar-secondary-nav">
+    <span class="d-block mb-3 text-sm text-uppercase text-muted font-weight-bold">Libraries</span>
+    <ul class="list-unstyled">
+      <li class="mb-3">
+        <a href="https://jquery.com/" target="_blank" class="text-dark">jQuery</a>
+      </li>
+      <li class="mb-3">
+        <a href="http://getbootstrap.com/" target="_blank" class="text-dark">Bootstrap</a>
+      </li>
+      <li class="mb-3">
+        <a href="https://popper.js.org/" target="_blank" class="text-dark">Popper.js</a>
+      </li>
+      <li>
+        <a href="http://www.chartjs.org/" target="_blank" class="text-dark">Chartjs</a>
+      </li>
+    </ul>
+  </nav>
+</aside>
+<div class="sidebar-backdrop" data-toggle="sidebar"></div>
