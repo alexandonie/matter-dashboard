@@ -20,7 +20,10 @@ module.exports = {
         test: /\.hbs$/,
         use: [
           {
-            loader: 'handlebars-loader'
+            loader: 'handlebars-loader',
+            options: {
+              helperDirs: paths.handlebarsHelpers
+            }
           },
           {
             loader: 'extract-loader'
