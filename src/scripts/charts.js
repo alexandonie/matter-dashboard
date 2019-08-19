@@ -1,7 +1,7 @@
-import Chart from 'chart.js';
+import Chart from 'chartjs';
 
 class Charts {
-  constructor () {
+  constructor() {
     this.firstInit = true;
     this.colors = {
       primary: 'rgb(23, 150, 243)',
@@ -13,35 +13,35 @@ class Charts {
     };
   }
 
-  setGlobalOptions () {
+  setGlobalOptions() {
     // setting the responsive mode to true by default
     Chart.defaults.global.responsive = true;
 
     // setting the axes color and padding
     Chart.defaults.line.scales.xAxes[0].gridLines =
-    Chart.defaults.line.scales.yAxes[0].gridLines =
-    Chart.defaults.bar.scales.xAxes[0].gridLines =
-    Chart.defaults.bar.scales.yAxes[0].gridLines =
-    Chart.defaults.horizontalBar.scales.xAxes[0].gridLines =
-    Chart.defaults.horizontalBar.scales.yAxes[0].gridLines = {
-      tickMarkLength: 20,
-      color: this.colors.grayLight,
-      zeroLineColor: 'transparent'
-    };
+      Chart.defaults.line.scales.yAxes[0].gridLines =
+      Chart.defaults.bar.scales.xAxes[0].gridLines =
+      Chart.defaults.bar.scales.yAxes[0].gridLines =
+      Chart.defaults.horizontalBar.scales.xAxes[0].gridLines =
+      Chart.defaults.horizontalBar.scales.yAxes[0].gridLines = {
+        tickMarkLength: 20,
+        color: this.colors.grayLight,
+        zeroLineColor: 'transparent'
+      };
 
     // setting the padding and label color for the yAxes (these don't have a tickMarkLength)
     Chart.defaults.line.scales.yAxes[0].ticks =
-    Chart.defaults.bar.scales.yAxes[0].ticks = {
-      padding: 16,
-      fontColor: this.colors.grayDark
-    };
+      Chart.defaults.bar.scales.yAxes[0].ticks = {
+        padding: 16,
+        fontColor: this.colors.grayDark
+      };
 
     // setting the padding and label color for the xAxes (these don't have a tickMarkLength)
     Chart.defaults.line.scales.xAxes[0].ticks =
-    Chart.defaults.bar.scales.xAxes[0].ticks = {
-      padding: 8,
-      fontColor: this.colors.grayDark
-    };
+      Chart.defaults.bar.scales.xAxes[0].ticks = {
+        padding: 8,
+        fontColor: this.colors.grayDark
+      };
 
     // hover settings for the line charts
     Chart.defaults.line.hover.mode = 'nearest';
@@ -62,15 +62,15 @@ class Charts {
      * and bar charts
      */
     Chart.defaults.radar.scale.gridLines =
-    Chart.defaults.radar.scale.angleLines = {
-      color: this.colors.grayLight
-    };
+      Chart.defaults.radar.scale.angleLines = {
+        color: this.colors.grayLight
+      };
 
     // setting the legend label's color
     Chart.defaults.global.legend.labels.fontColor = this.colors.grayDark;
   }
 
-  createChart (canvas, options) {
+  createChart(canvas, options) {
     if (!canvas) {
       throw new Error('The chart\'s canvas couldn\'t be found in the DOM.');
     }
@@ -83,7 +83,7 @@ class Charts {
     return new Chart(canvas.getContext('2d'), options);
   }
 
-  init () {
+  init() {
     // init bar chart
     const barChartCanvas = document.getElementById('barChart');
     if (barChartCanvas) {

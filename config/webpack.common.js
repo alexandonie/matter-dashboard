@@ -7,6 +7,10 @@ module.exports = {
   output: {
     publicPath: '/'
   },
+  externals: {
+    chartjs: 'Chart',
+    'perfect-scrollbar': 'PerfectScrollbar'
+  },
   module: {
     rules: [
       {

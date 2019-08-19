@@ -10,6 +10,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.0.0/css/perfect-scrollbar.min.css">
 </head>
 <body>
   <header class="header">
@@ -164,7 +165,7 @@
               <a class="dropdown-item" href="#0">Messages</a>
               <a class="dropdown-item" href="#0">Settings</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="/">Logout</a>
+              <a class="dropdown-item" href="/login">Logout</a>
             </div> <!-- end of dropdown-menu -->
           </div> <!-- end of dropdown -->
         </li>
@@ -190,13 +191,13 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link d-flex align-items-center" href="/">
+            <a class="nav-link d-flex align-items-center" href="/buttons">
               <i class="zmdi zmdi-layers icon icon-md mr-2" aria-hidden="true"></i>
               Components
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link d-flex align-items-center active" href="/">
+            <a class="nav-link d-flex align-items-center active" href="/pages">
               <i class="zmdi zmdi-file icon icon-md mr-2" aria-hidden="true"></i>
               Pages
             </a>
@@ -219,31 +220,31 @@
         <span class="d-block mb-3 text-sm text-uppercase text-muted font-weight-bold">Components</span>
         <ul class="list-unstyled">
           <li class="mb-3">
-            <a href="/" class="d-flex align-items-center justify-content-between text-dark no-underline">
+            <a href="/buttons" class="d-flex align-items-center justify-content-between text-dark no-underline">
               Buttons
               <span class="d-block text-secondary">15</span>
             </a>
           </li>
           <li class="mb-3">
-            <a href="/" class="d-flex align-items-center justify-content-between text-dark no-underline">
+            <a href="/charts" class="d-flex align-items-center justify-content-between text-dark no-underline">
               Charts
               <span class="d-block text-secondary">3</span>
             </a>
           </li>
           <li class="mb-3">
-            <a href="/" class="d-flex align-items-center justify-content-between text-dark no-underline">
+            <a href="/forms" class="d-flex align-items-center justify-content-between text-dark no-underline">
               Forms
               <span class="d-block text-secondary">20</span>
             </a>
           </li>
           <li class="mb-3">
-            <a href="/" class="d-flex align-items-center justify-content-between text-dark no-underline">
+            <a href="/tables" class="d-flex align-items-center justify-content-between text-dark no-underline">
               Tables
               <span class="d-block text-secondary">2</span>
             </a>
           </li>
           <li>
-            <a href="/" class="d-flex align-items-center justify-content-between text-dark no-underline">
+            <a href="/typography" class="d-flex align-items-center justify-content-between text-dark no-underline">
               Typography
               <span class="d-block text-secondary">9</span>
             </a>
@@ -274,7 +275,7 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb breadcrumb-primary">
           <li class="breadcrumb-item">
-            <a href="/">Startupkit</a>
+            <a href="#0">Startupkit</a>
           </li>
           <li class="breadcrumb-item">
             <a href="/">My dashboard</a>
@@ -382,5 +383,11 @@
       </footer>
     </main> <!-- end of container-fluid -->
   </div> <!-- end of d-flex -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.3.0/perfect-scrollbar.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
 </body>
 </html>

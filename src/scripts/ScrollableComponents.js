@@ -6,6 +6,10 @@ class ScrollableComponents {
   }
 
   init () {
+    if (!PerfectScrollbar) {
+      return;
+    }
+
     this.scrollableElements.forEach(elem => {
       const elemOptions = elem.dataset;
       const elemHasOptions = Object.keys(elemOptions).length > 1;
