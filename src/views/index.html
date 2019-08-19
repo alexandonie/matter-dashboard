@@ -13,7 +13,7 @@
 </head>
 <body>
   <header class="header">
-    <div class="header-navbar">
+    <div class="header-navbar header-navbar-has-shadow">
       <div class="header-navbar-details">
         <button type="button" data-toggle="sidebar">
           <i class="zmdi zmdi-menu" aria-hidden="true"></i>
@@ -170,44 +170,23 @@
         </li>
       </ul>
     </div> <!-- end of header-navbar -->
-    <div class="header-billboard" style="background-image: url('${require('../images/header-billboard-bg.jpg')}');">
-      <div class="header-billboard-inner container-main">
-        <ul class="nav nav-tabs nav-tabs-light nav-tabs-lg" data-scrollable="true" data-suppress-scroll-y="true">
-          <li class="nav-item">
-            <a href="/buttons" class="nav-link">Buttons</a>
-          </li>
-          <li class="nav-item">
-            <a href="/charts" class="nav-link">Charts</a>
-          </li>
-          <li class="nav-item">
-            <a href="/forms" class="nav-link">Forms</a>
-          </li>
-          <li class="nav-item">
-            <a href="/tables" class="nav-link active">Tables</a>
-          </li>
-          <li class="nav-item">
-            <a href="/typography" class="nav-link">Typography</a>
-          </li>
-        </ul>
-      </div> <!-- end of header-billboard-inner -->
-    </div> <!-- end of header-billboard -->
   </header>
 
-  <div class="d-flex align-items-start mt-3 mb-8 position-relative">
-    <aside class="sidebar" data-scrollable="true">
+  <div class="d-flex align-items-start mt-10 mb-8">
+    <aside class="sidebar sidebar-fixed" data-scrollable="true">
       <div class="sidebar-brand">
         <h1 class="text-xl text-light my-0">Matter</h1>
       </div> <!-- end of sidebar-brand -->
       <nav class="sidebar-main-nav">
         <ul class="nav nav-pills flex-column">
           <li class="nav-item">
-            <a class="nav-link d-flex align-items-center" href="/">
+            <a class="nav-link d-flex align-items-center active" href="/">
               <i class="zmdi zmdi-home icon icon-md mr-2" aria-hidden="true"></i>
               Dashboard
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link d-flex align-items-center active" href="/buttons">
+            <a class="nav-link d-flex align-items-center" href="/buttons">
               <i class="zmdi zmdi-layers icon icon-md mr-2" aria-hidden="true"></i>
               Components
             </a>
@@ -289,13 +268,165 @@
 
     <main class="container-main">
       <div class="row">
+        <div class="col-12 col-xl-8">
+          <div class="row h-100">
+            <div class="col-12 col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <h2 class="text-md">Bookings</h2>
+                  <span class="d-inline-block mb-4 text-sm text-secondary">February 26th - March 5th</span>
+
+                  <div class="d-flex align-items-baseline justify-content-between">
+                    <h3 class="mb-0 display-2">$ 41,726</h3>
+                    <span class="text-success font-weight-bold">
+                      <i class="zmdi zmdi-long-arrow-up" aria-hidden="true"></i>
+                      13.7%
+                    </span>
+                  </div> <!-- end of d-flex -->
+                </div> <!-- end of card-body -->
+                <div class="px-1 py-1 border-top">
+                  <a
+                    href="/tables"
+                    class="btn btn-text btn-secondary btn-block d-flex align-items-center justify-content-between"
+                  >
+                    Go to campaigns
+                    <i class="zmdi zmdi-arrow-right ml-1 icon" aria-hidden="true"></i>
+                  </a>
+                </div> <!-- end of px-1 -->
+              </div> <!-- end of card -->
+            </div> <!-- end of col -->
+
+            <div class="col-12 col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <h2 class="text-md">Recurring revenue</h2>
+                  <span class="d-inline-block mb-4 text-sm text-secondary">March 1st - April 1st</span>
+
+                  <div class="d-flex align-items-baseline justify-content-between">
+                    <h3 class="mb-0 display-2">$ 15,381</h3>
+                    <span class="text-danger font-weight-bold">
+                      <i class="zmdi zmdi-long-arrow-down" aria-hidden="true"></i>
+                      1.58%
+                    </span>
+                  </div> <!-- end of d-flex -->
+                </div> <!-- end of card-body -->
+                <div class="px-1 py-1 border-top">
+                  <a
+                    href="/charts"
+                    class="btn btn-text btn-secondary btn-block d-flex align-items-center justify-content-between"
+                  >
+                    Full report
+                    <i class="zmdi zmdi-arrow-right ml-1 icon" aria-hidden="true"></i>
+                  </a>
+                </div> <!-- end of px-1 -->
+              </div> <!-- end of card -->
+            </div> <!-- end of col -->
+
+            <div class="col-12">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between mb-4">
+                    <h2 class="mb-0 text-md">Bookings report</h2>
+                    <div class="form-group mb-0">
+                      <label for="barChartFilter" class="sr-only">Filter revenue</label>
+                      <select class="custom-select" id="barChartFilter">
+                        <option disabled>Filter revenue</option>
+                        <option>Daily</option>
+                        <option>Weekly</option>
+                        <option selected>Monthly</option>
+                        <option>Yearly</option>
+                      </select>
+                    </div> <!-- end of form-group -->
+                  </div> <!-- end of d-flex -->
+                  <canvas id="barChart"></canvas>
+                </div> <!-- end of card-body -->
+              </div> <!-- end of card -->
+            </div> <!-- end of col -->
+          </div> <!-- end of row -->
+        </div> <!-- end of col -->
+
+        <div class="col-12 col-xl-4">
+          <div class="card d-block h-100">
+            <div class="card-body">
+              <h2 class="text-md">Latest enquiries</h2>
+            </div> <!-- end of card-body -->
+            <h4 class="mb-2 ml-3 text-sm font-weight-bold text-secondary">Recent</h4>
+            <ul class="list-unstyled mb-5">
+              <li class="d-flex align-items-center justify-content-between py-2 px-3 border-top">
+                <img src="../images/avatar-2.jpg" class="thumbnail rounded-circle mr-2" alt="User Avatar" />
+                <div class="mr-auto">
+                  <span class="d-block">Jason Sandoval</span>
+                  <span class="text-secondary">jason84@example.com</span>
+                </div>
+                <i class="zmdi zmdi-comment icon icon-md text-secondary" aria-hidden="true"></i>
+              </li>
+              <li class="d-flex align-items-center justify-content-between py-2 px-3 border-top">
+                <img src="../images/avatar-3.jpg" class="thumbnail rounded-circle mr-2" alt="User Avatar" />
+                <div class="mr-auto">
+                  <span class="d-block">Andrea Dixon</span>
+                  <span class="text-secondary">andreadixon@me.com</span>
+                </div>
+                <i class="zmdi zmdi-comment icon icon-md text-secondary" aria-hidden="true"></i>
+              </li>
+              <li class="d-flex align-items-center justify-content-between py-2 px-3 border-top">
+                <img src="../images/avatar-4.jpg" class="thumbnail rounded-circle mr-2" alt="User Avatar" />
+                <div class="mr-auto">
+                  <span class="d-block">Christian Fox</span>
+                  <span class="text-secondary">christian@nike.com</span>
+                </div>
+                <i class="zmdi zmdi-comment icon icon-md text-secondary" aria-hidden="true"></i>
+              </li>
+              <li class="d-flex align-items-center justify-content-between py-2 px-3 border-top">
+                <img src="../images/avatar-5.jpg" class="thumbnail rounded-circle mr-2" alt="User Avatar" />
+                <div class="mr-auto">
+                  <span class="d-block">Olivia Johnson</span>
+                  <span class="text-secondary">olivia-89@example.com</span>
+                </div>
+                <i class="zmdi zmdi-comment icon icon-md text-secondary" aria-hidden="true"></i>
+              </li>
+            </ul>
+
+            <h4 class="mb-2 ml-3 text-sm font-weight-bold text-secondary">Previous</h4>
+            <ul class="list-unstyled mb-5 mb-lg-0">
+              <li class="d-flex align-items-center justify-content-between py-2 px-3 border-top">
+                <img src="../images/avatar-6.jpg" class="thumbnail rounded-circle mr-2" alt="User Avatar" />
+                <div class="mr-auto">
+                  <span class="d-block">David Holland</span>
+                  <span class="text-secondary">david-96@neole.com</span>
+                </div>
+                <i class="zmdi zmdi-comment icon icon-md text-secondary" aria-hidden="true"></i>
+              </li>
+              <li class="d-flex align-items-center justify-content-between py-2 px-3 border-top">
+                <img src="../images/avatar-7.jpg" class="thumbnail rounded-circle mr-2" alt="User Avatar" />
+                <div class="mr-auto">
+                  <span class="d-block">Catherine Ellis</span>
+                  <span class="text-secondary">cath_92@example.com</span>
+                </div>
+                <i class="zmdi zmdi-comment icon icon-md text-secondary" aria-hidden="true"></i>
+              </li>
+            </ul>
+          </div> <!-- end of card -->
+        </div> <!-- end of col -->
+      </div> <!-- end of row -->
+
+      <div class="row">
         <div class="col">
           <div class="card">
             <div class="card-body pb-0">
-              <h2 class="mb-4 text-md">Simple table</h2>
+              <div class="d-flex align-items-center align-items-md-start justify-content-between mb-4">
+                <h2 class="text-md mb-0">Marketing campaigns</h2>
+                <button type="button" class="btn btn-text ml-auto">
+                  <span class="sr-only">Filter table</span>
+                  <i class="zmdi zmdi-filter-list icon icon-lg text-secondary" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="btn btn-text pr-0">
+                  <span class="sr-only">More options</span>
+                  <i class="zmdi zmdi-more-vert icon icon-lg text-secondary" aria-hidden="true"></i>
+                </button>
+              </div> <!-- end of d-flex -->
             </div> <!-- end of card-body -->
             <div class="table-responsive">
-              <table class="table table-hover">
+              <table class="table table-hover mb-0">
                 <thead>
                   <tr>
                     <th>#</th>
@@ -440,157 +571,76 @@
                       <span class="badge badge-success">Active</span>
                     </td>
                   </tr>
-                </tbody>
-              </table>
-            </div> <!-- end of table-responsive -->
-          </div> <!-- end of card -->
-        </div> <!-- end of col -->
-      </div> <!-- end of row -->
-
-      <div class="row">
-        <div class="col">
-          <div class="card">
-            <div class="card-body pb-0">
-              <div class="d-flex align-items-center align-items-md-start justify-content-between mb-4">
-                <h2 class="text-md mb-0">Striped table</h2>
-                <button type="button" class="btn btn-text ml-auto">
-                  <span class="sr-only">Filter table</span>
-                  <i class="zmdi zmdi-filter-list icon icon-lg text-secondary" aria-hidden="true"></i>
-                </button>
-                <button type="button" class="btn btn-text pr-0">
-                  <span class="sr-only">More options</span>
-                  <i class="zmdi zmdi-more-vert icon icon-lg text-secondary" aria-hidden="true"></i>
-                </button>
-              </div> <!-- end of d-flex -->
-            </div> <!-- end of card-body -->
-            <div class="table-responsive">
-              <table class="table table-striped">
-                <thead>
                   <tr>
-                    <th>#</th>
-                    <th>Dessert (100g serving)</th>
-                    <th>Calories</th>
-                    <th>Fat (g)</th>
-                    <th>Carbs (g)</th>
-                    <th>Protein (g)</th>
-                    <th>Sodium (mg)</th>
-                    <th>Calcium (%)</th>
-                    <th>Iron (%)</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>Frozen yogurt</td>
-                    <td>159</td>
-                    <td>6.0</td>
-                    <td>24</td>
-                    <td>4.0</td>
-                    <td>87</td>
-                    <td>14%</td>
-                    <td>1%</td>
+                    <td>11</td>
+                    <td>Pets At Work</td>
+                    <td>$3,277.00/day</td>
+                    <td>12,710</td>
+                    <td>476,900</td>
+                    <td>5.68%</td>
+                    <td>$7.51</td>
+                    <td>$36,998.00</td>
+                    <td>
+                      <span class="badge badge-success">Active</span>
+                    </td>
                   </tr>
                   <tr>
-                    <td>2</td>
-                    <td>Ice cream sandwich</td>
-                    <td>237</td>
-                    <td>9.0</td>
-                    <td>37</td>
-                    <td>4.3</td>
-                    <td>129</td>
-                    <td>8%</td>
-                    <td>1%</td>
+                    <td>12</td>
+                    <td>Let’s Do Lunch</td>
+                    <td>$25.00/day</td>
+                    <td>2,851</td>
+                    <td>82,961</td>
+                    <td>0.31%</td>
+                    <td>$2.26</td>
+                    <td>$350.00</td>
+                    <td>
+                      <span class="badge badge-danger">Blocked</span>
+                    </td>
                   </tr>
                   <tr>
-                    <td>3</td>
-                    <td>Eclair</td>
-                    <td>262</td>
-                    <td>16.0</td>
-                    <td>24</td>
-                    <td>6.0</td>
-                    <td>337</td>
-                    <td>6%</td>
-                    <td>7%</td>
+                    <td>13</td>
+                    <td>Tweet From The Seat</td>
+                    <td>$738.00/day</td>
+                    <td>5,952</td>
+                    <td>354,123</td>
+                    <td>3.89%</td>
+                    <td>$1.19</td>
+                    <td>$19,752.05</td>
+                    <td>
+                      <span class="badge badge-success">Active</span>
+                    </td>
                   </tr>
                   <tr>
-                    <td>4</td>
-                    <td>Cupcake</td>
-                    <td>305</td>
-                    <td>3.7</td>
-                    <td>67</td>
-                    <td>4.3</td>
-                    <td>413</td>
-                    <td>3%</td>
-                    <td>8%</td>
+                    <td>14</td>
+                    <td>Like A Girl</td>
+                    <td>$5.00/day</td>
+                    <td>1,044</td>
+                    <td>13,871</td>
+                    <td>1.05%</td>
+                    <td>$2.22</td>
+                    <td>$250.00</td>
+                    <td>
+                      <span class="badge badge-success">Active</span>
+                    </td>
                   </tr>
-                  <tr>
-                    <td>5</td>
-                    <td>Gingerbread</td>
-                    <td>356</td>
-                    <td>16.0</td>
-                    <td>49</td>
-                    <td>3.9</td>
-                    <td>327</td>
-                    <td>7%</td>
-                    <td>16%</td>
-                  </tr>
-                  <tr>
-                    <td>6</td>
-                    <td>Jelly bean</td>
-                    <td>375</td>
-                    <td>0.0</td>
-                    <td>94</td>
-                    <td>0.0</td>
-                    <td>50</td>
-                    <td>0%</td>
-                    <td>0%</td>
-                  </tr>
-                  <tr>
-                    <td>7</td>
-                    <td>Lollipop</td>
-                    <td>392</td>
-                    <td>0.2</td>
-                    <td>98</td>
-                    <td>0</td>
-                    <td>38</td>
-                    <td>0%</td>
-                    <td>2%</td>
-                  </tr>
-                  <tr>
-                    <td>8</td>
-                    <td>Honeycomb</td>
-                    <td>408</td>
-                    <td>3.2</td>
-                    <td>87</td>
-                    <td>6.5</td>
-                    <td>562</td>
-                    <td>0%</td>
-                    <td>45%</td>
-                  </tr>
-                  <tr>
-                    <td>9</td>
-                    <td>Donut</td>
-                    <td>452</td>
-                    <td>25.0</td>
-                    <td>51</td>
-                    <td>4.9</td>
-                    <td>326</td>
-                    <td>2%</td>
-                    <td>22%</td>
-                  </tr>
-                  <tr>
-                    <td>10</td>
-                    <td>KitKat</td>
-                    <td>518</td>
-                    <td>26.0</td>
-                    <td>65</td>
-                    <td>7</td>
-                    <td>54</td>
-                    <td>12%</td>
-                    <td>6%</td>
+                  <tr class="border-bottom">
+                    <td>15</td>
+                    <td>Live For Now</td>
+                    <td>$37.50/day</td>
+                    <td>2,881</td>
+                    <td>37,218</td>
+                    <td>2.82%</td>
+                    <td>$3.06</td>
+                    <td>$615.32</td>
+                    <td>
+                      <span class="badge badge-success">Active</span>
+                    </td>
                   </tr>
                 </tbody>
               </table>
+              <div class="card-body text-center">
+                <button type="button" class="btn btn-secondary btn-text">Load more</button>
+              </div> <!-- end of card-body -->
             </div> <!-- end of table-responsive -->
           </div> <!-- end of card -->
         </div> <!-- end of col -->

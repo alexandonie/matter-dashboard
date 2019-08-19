@@ -170,17 +170,18 @@
         </li>
       </ul>
     </div> <!-- end of header-navbar -->
+
     <div class="header-billboard" style="background-image: url('${require('../images/header-billboard-bg.jpg')}');">
       <div class="header-billboard-inner container-main">
         <ul class="nav nav-tabs nav-tabs-light nav-tabs-lg" data-scrollable="true" data-suppress-scroll-y="true">
           <li class="nav-item">
-            <a href="/buttons" class="nav-link">Buttons</a>
+            <a href="/buttons" class="nav-link active">Buttons</a>
           </li>
           <li class="nav-item">
             <a href="/charts" class="nav-link">Charts</a>
           </li>
           <li class="nav-item">
-            <a href="/forms" class="nav-link active">Forms</a>
+            <a href="/forms" class="nav-link">Forms</a>
           </li>
           <li class="nav-item">
             <a href="/tables" class="nav-link">Tables</a>
@@ -289,167 +290,89 @@
 
     <main class="container-main">
       <div class="row">
-        <div class="col-12 col-lg-6">
-          <div class="card">
-            <div class="card-body">
-              <h2 class="mb-5 text-md">Normal form</h2>
-              <form action="#" method="POST">
-                <div class="form-group">
-                  <label for="nameExample1">Name</label>
-                  <input type="text" class="form-control" id="nameExample1">
-                </div> <!-- end of form-group -->
-                <div class="form-group">
-                  <label for="emailExample1">Email</label>
-                  <input type="email" class="form-control" id="emailExample1">
-                </div> <!-- end of form-group -->
-                <div class="form-group">
-                  <label for="messageExample1">Message</label>
-                  <textarea class="form-control" id="messageExample1" rows="4"></textarea>
-                </div> <!-- end of form-group -->
-                <div class="text-right">
-                  <button type="button" class="btn btn-primary">Submit</button>
-                </div> <!-- end of text-right -->
-              </form>
-            </div> <!-- end of card-body -->
-          </div> <!-- end of card -->
-        </div> <!-- end of col -->
-
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-lg-4">
           <div class="card h-100">
             <div class="card-body">
-              <h2 class="mb-5 text-md">Horizontal form</h2>
-              <form action="#" method="POST">
-                <div class="form-group row align-items-center">
-                  <div class="col-3 col-md-2 pr-0 text-right">
-                    <label for="emailExample2" class="mb-0">Email</label>
-                  </div> <!-- end of col-3 -->
-                  <div class="col">
-                    <input type="email" class="form-control" id="emailExample2">
-                  </div> <!-- end of col -->
-                </div> <!-- end of form-group -->
-
-                <div class="form-group row align-items-center">
-                  <div class="col-3 col-md-2 pr-0 text-right">
-                    <label for="passwordExample2" class="mb-0">Password</label>
-                  </div> <!-- end of col-3 -->
-                  <div class="col">
-                    <input type="password" class="form-control" id="passwordExample2">
-                  </div> <!-- end of col -->
-                </div> <!-- end of form-group -->
-
-                <div class="form-group row">
-                  <div class="col offset-3 offset-md-2">
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="rememberMeExample">
-                      <label class="custom-control-label" for="rememberMeExample">Remember me</label>
-                    </div> <!-- end of custom-checkbox -->
-                  </div> <!-- end of col -->
-                </div> <!-- end of form-group -->
-
-                <div class="row">
-                  <div class="col offset-3 offset-md-2">
-                    <button type="button" class="btn btn-primary">Login</button>
-                  </div> <!-- end of col -->
-                </div> <!-- end of row -->
-              </form>
+              <h2 class="mb-4 text-md">Sizes</h2>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-3">
+                  <button type="button" class="btn btn-primary btn-sm">Button small</button>
+                </li>
+                <li class="mb-3">
+                  <button type="button" class="btn btn-primary">Button default</button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-primary btn-lg">Button large</button>
+                </li>
+              </ul>
             </div> <!-- end of card-body -->
           </div> <!-- end of card -->
         </div> <!-- end of col -->
-      </div> <!-- end of row -->
 
-      <div class="row">
-        <div class="col">
+        <div class="col-12 col-lg-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="mb-4 text-md">Colors</h2>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-3">
+                  <button type="button" class="btn btn-primary">Button primary</button>
+                </li>
+                <li class="mb-3">
+                  <button type="button" class="btn btn-danger">Button accent</button>
+                </li>
+                <li class="mb-3">
+                  <button type="button" class="btn btn-secondary">Button secondary</button>
+                </li>
+                <li class="mb-3">
+                  <button type="button" class="btn btn-primary btn-text">Button primary</button>
+                </li>
+                <li class="mb-3">
+                  <button type="button" class="btn btn-danger btn-text">Button accent</button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary btn-text">Button secondary</button>
+                </li>
+              </ul>
+            </div> <!-- end of card-body -->
+          </div> <!-- end of card -->
+        </div> <!-- end of col -->
+
+        <div class="col-12 col-lg-4">
           <div class="card">
             <div class="card-body">
-              <h2 class="mb-4 text-md">Form elements</h2>
-              <div class="row">
-                <div class="col-xl-6 pr-xl-3">
-                  <div class="form-group">
-                    <label for="inputNormal">Normal input</label>
-                    <input type="text" class="form-control" id="inputNormal">
-                  </div> <!-- end of form-group -->
-                  <div class="form-group">
-                    <label for="inputSelect">Select input</label>
-                    <select class="custom-select" id="inputSelect" required>
-                      <option disabled selected value="">Please select an option</option>
-                      <option value="1">Option 1</option>
-                      <option value="2">Option 2</option>
-                      <option value="3">Option 3</option>
-                      <option value="4">Option 4</option>
-                      <option value="5">Option 5</option>
-                    </select>
-                  </div> <!-- end of form-group -->
-                  <div class="form-group">
-                    <label for="inputGroup1">Input group</label>
-                    <div class="input-group">
-                      <input type="text" class="form-control w-75" id="inputGroup1" placeholder="Street">
-                      <input type="text" class="form-control w-25" id="inputGroup2" placeholder="Postcode">
-                    </div> <!-- end of input-group -->
-                  </div> <!-- end of form-group -->
-                  <div class="form-group">
-                    <label for="inputGroupIcon">Input group icon</label>
-                    <div class="input-group">
-                      <input type="text" class="form-control" id="inputGroupIcon">
-                      <div class="input-group-append">
-                        <span class="input-group-text">
-                          <i class="zmdi zmdi-search icon icon-md" aria-hidden="true"></i>
-                        </span>
-                      </div> <!-- end of input-group-append -->
-                    </div> <!-- end of input-group -->
-                  </div> <!-- end of form-group -->
-                  <div class="form-group">
-                    <label for="textarea">Textarea</label>
-                    <textarea class="form-control" id="textarea" rows="4"></textarea>
-                  </div> <!-- end of form-group -->
-
-                  <div class="d-xl-flex">
-                    <div class="mr-5">
-                      <div class="form-group">
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input" id="checkbox1">
-                          <label class="custom-control-label" for="checkbox1">Checkbox option 1</label>
-                        </div> <!-- end of custom-checkbox -->
-                      </div> <!-- end of form-group -->
-                      <div class="form-group">
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input" id="checkbox2" checked>
-                          <label class="custom-control-label" for="checkbox2">Checkbox option 2</label>
-                        </div> <!-- end of custom-checkbox -->
-                      </div> <!-- end of form-group -->
-                    </div>
-                    <div>
-                      <div class="form-group">
-                        <div class="custom-control custom-radio">
-                          <input type="radio" id="radioExample1" name="radioExample" class="custom-control-input">
-                          <label class="custom-control-label" for="radioExample1">Radio option 1</label>
-                        </div> <!-- end of custom-radio -->
-                      </div> <!-- end of form-group -->
-                      <div class="form-group">
-                        <div class="custom-control custom-radio">
-                          <input type="radio" id="radioExample2" name="radioExample" class="custom-control-input" checked>
-                          <label class="custom-control-label" for="radioExample2">Radio option 2</label>
-                        </div> <!-- end of custom-radio -->
-                      </div> <!-- end of form-group -->
-                    </div>
-                  </div> <!-- end of d-flex -->
-                </div> <!-- end of col -->
-
-                <div class="col-xl-6 pl-xl-3">
-                  <div class="form-group">
-                    <label for="inputDisabled">Disabled input</label>
-                    <input type="text" class="form-control" id="inputDisabled" disabled>
-                  </div> <!-- end of form-group -->
-                  <div class="form-group">
-                    <label for="inputSuccess">Success input</label>
-                    <input type="text" class="form-control is-valid" id="inputSuccess">
-                  </div> <!-- end of form-group -->
-                  <div class="form-group">
-                    <label for="inputError">Error input</label>
-                    <input type="text" class="form-control is-invalid" id="inputError">
-                    <span class="invalid-feedback">Error message here</span>
-                  </div> <!-- end of form-group -->
-                </div> <!-- end of col -->
-              </div> <!-- end of row -->
+              <h2 class="mb-4 text-md">Types</h2>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-3">
+                  <button type="button" class="btn btn-primary">Button normal</button>
+                </li>
+                <li class="mb-3">
+                  <button type="button" class="btn btn-outline-primary">Button outline</button>
+                </li>
+                <li class="mb-3">
+                  <button type="button" class="btn btn-text btn-primary">Button text</button>
+                </li>
+                <li class="mb-3">
+                  <button type="button" class="btn btn-primary">
+                    <i class="zmdi zmdi-star mr-1 icon" aria-hidden="true"></i>
+                    Button icon left
+                  </button>
+                </li>
+                <li class="mb-3">
+                  <button type="button" class="btn btn-primary">
+                    Button icon right
+                    <i class="zmdi zmdi-star ml-1 icon" aria-hidden="true"></i>
+                  </button>
+                </li>
+                <li class="mb-3">
+                  <button type="button" class="btn btn-primary btn-fab">
+                    <i class="zmdi zmdi-thumb-up icon icon-md" aria-hidden="true"></i>
+                    <span class="sr-only">Thumbs up</span>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-primary btn-block">Button block</button>
+                </li>
+              </ul>
             </div> <!-- end of card-body -->
           </div> <!-- end of card -->
         </div> <!-- end of col -->
