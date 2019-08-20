@@ -1,7 +1,7 @@
 class Navigation {
   constructor () {
     this.body = document.querySelector('body');
-    this.toggleBtn = document.querySelectorAll('[data-toggle="sidebar"]');
+    this.toggleButtons = document.querySelectorAll('[data-toggle="sidebar"]');
     this.sidebar = document.querySelector('.sidebar');
     this.mainContent = document.querySelectorAll('.container-main');
     this.sidebarOpenClass = 'sidebar-open';
@@ -54,8 +54,8 @@ class Navigation {
   }
 
   init () {
-    this.toggleBtn.forEach(toggleElem => {
-      toggleElem.addEventListener('click', this.toggle.bind(this));
+    this.toggleButtons.forEach(button => {
+      button.addEventListener('click', this.toggle.bind(this));
     });
     this.enableStickyNavigation();
   }
