@@ -95,8 +95,8 @@ $spacers: (
 
 $font-family-sans-serif: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 $font-icon: 'Material-Design-Iconic-Font';
+$font-size-default: 14px;
 
-// base font-size (in px) is defined in _typography.scss
 $text-xs: 0.8571rem;
 $text-sm: 0.9286rem;
 $text-base: 1rem;
@@ -254,10 +254,10 @@ $custom-select-focus-box-shadow: none;
 $input-group-addon-color: $gray-500;
 $input-group-addon-bg: $input-bg;
 
-$custom-control-gutter: $spacer * 3;
+$custom-control-gutter: calc-rem($spacer * 3);
 $custom-control-spacer-x: $spacer * 2;
 
-$custom-control-indicator-size: $spacer * 2;
+$custom-control-indicator-size: calc-rem($spacer * 2);
 $custom-control-indicator-bg: $white;
 $custom-control-indicator-box-shadow: none;
 $custom-radio-indicator-icon-checked: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='#{$primary}'/%3E%3C/svg%3E"), "#", "%23");

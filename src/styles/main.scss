@@ -1,11 +1,14 @@
 // bootstrap functions (used in _settings.scss)
-@import 'vendors/bootstrap/functions';
+@import '~bootstrap/scss/functions';
+
+// matter functions
+@import 'functions';
 
 // config
 @import 'settings';
 
 // bootstrap
-@import 'vendors/bootstrap/bootstrap';
+@import '~bootstrap/scss/bootstrap';
 
 // components
 @import

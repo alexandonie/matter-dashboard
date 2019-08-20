@@ -1,5 +1,5 @@
 html, body {
-  font-size: 14px;
+  font-size: $font-size-default;
 
   // making sure the fonts will render the same across different web browsers
   -moz-osx-font-smoothing: grayscale;
