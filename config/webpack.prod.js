@@ -8,6 +8,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 const PurgeCssPlugin = require('purgecss-webpack-plugin');
 const glob = require('glob');
 const { generateHtmlPluginTemplates } = require('./helpers');
+const webpack = require('webpack');
 
 module.exports = merge(common, {
   mode: 'production',
@@ -62,6 +63,13 @@ module.exports = merge(common, {
     }),
     new PurgeCssPlugin({
       paths: glob.sync(`${paths.src}/**/*`,  { nodir: true })
+    }),
+    new webpack.ProgressPlugin({
+      profile: true
     })
-  ]
+  ],
+  stats: {
+    children: false,
+    maxModules: 0
+  }
 });
