@@ -28,6 +28,9 @@ module.exports = merge(common, {
             loader: 'css-loader',
           },
           {
+            loader: 'postcss-loader'
+          },
+          {
             loader: 'resolve-url-loader'
           },
           {
