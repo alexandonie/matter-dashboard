@@ -4,7 +4,7 @@
 [![peerDependencies Status](https://img.shields.io/david/peer/alexandonie/matter-dashboard.svg)](https://david-dm.org/alexandonie/matter-dashboard?type=peer)
 [![devDependency Status](https://img.shields.io/david/dev/alexandonie/matter-dashboard.svg)](https://david-dm.org/alexandonie/matter-dashboard?type=dev)
 
-Matter is a material design system built on top of the latest version of bootstrap. It's released under [MIT](LICENSE) which means you can do whatever you want with it, you can use it for your personal projects, client projects or you can sell it, there's no limitations.
+Matter is a material design system built on top of the latest version of bootstrap. It's released under [MIT](LICENSE) which means you can do whatever you want with it, you can use it for your personal projects, client projects or you can sell it, there are no limitations.
 
 ![Website Preview](https://stupefied-euler-a72577.netlify.com/aj13hf4hj5a3sdf7akp.jpg "Matter dashboard")
 
