@@ -74,9 +74,7 @@ Everyone is welcome to contribute. If you want to add, change or fix something, 
 
 ## Author
 
-Both code and design by:
-
-**Alex Andonie**
+Designed and coded by me 😁
 
 -   Website: <https://alexandonie.com/>
 -   Github: <https://github.com/alexandonie/>
