@@ -12,7 +12,6 @@ Matter is a material design system built on top of the latest version of bootstr
 **Story:** Matter is a part of a failed side project. Long story short, I lost my interest in the project and everything fell apart. To pursue the initial idea of the project (which was to help other developers ship things faster) and to keep the project alive, I decided to refactor Matter and release it for free. The version you're currently viewing is a stripped down version. More components will be added as they get refactored.
 
 
-
 ## Installation
 
 Before anything else, make sure nodejs and npm are installed on your machine. If not, follow [these instructions](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and then proceed with the next steps:
@@ -74,6 +73,8 @@ Everyone is welcome to contribute. If you want to add, change or fix something, 
 
 
 ## Author
+
+Both code and design by:
 
 **Alex Andonie**
 
