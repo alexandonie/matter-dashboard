@@ -46,7 +46,11 @@ module.exports = merge(common, {
   },
   optimization: {
     minimizer: [
-      new OptimizeCssAssetsPlugin(),
+      new OptimizeCssAssetsPlugin({
+        cssProcessorPluginOptions: {
+          preset: ['default', { normalizePositions: false }]
+        }
+      }),
       new TerserPlugin(),
       ...generateHtmlPluginTemplates({
         collapseWhitespace: true,
