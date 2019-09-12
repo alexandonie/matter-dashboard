@@ -28,7 +28,10 @@ module.exports = merge(common, {
             }
           },
           {
-            loader: 'postcss-loader'
+            loader: 'postcss-loader',
+            options: {
+              sourceMap: true
+            }
           },
           {
             loader: 'resolve-url-loader'
